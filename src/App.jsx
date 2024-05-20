@@ -1,8 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { useState } from 'react'
 import './App.css'
 import AppLayout from "../AppLayout";
 import Home from './Pages/Home/Home'
+
 
 
 const routes = createBrowserRouter([
@@ -16,7 +16,6 @@ const routes = createBrowserRouter([
   },
 ]);
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
