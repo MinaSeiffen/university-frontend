@@ -1,15 +1,27 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home/Home";
-import SignUp from "./Pages/SignUp/SignUp";
+import { useState } from 'react'
+import { BrowserRouter ,Router, Route } from 'react-router-dom'
+import './App.css'
+import Home from './Pages/Home/Home'
 
+
+
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      { path: "", index: true, element: <Home /> },
+    
+    ],
+  },
+]);
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sign-up" element={<SignUp />} />
-        </Routes>
+     <Home/>
       </BrowserRouter>
     </>
   );
