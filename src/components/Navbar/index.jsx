@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -13,12 +14,14 @@ export default function Navbar() {
             />
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <Link to='/sign-up'>
             <button
               type="button"
               className="text-white bg-[#240F6E] font-medium rounded-lg text-sm px-4 py-2 text-center me-20"
-            >
+              >
               Sign Up
             </button>
+                </Link>
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
