@@ -11,6 +11,7 @@ import Home from "./Pages/Home/Home";
 import SignUp from "./Pages/SignUp/SignUp"
 
 import Navbar from "./components/Navbar/index"
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sign-up" element={<SignUp />} />
         </Routes>
+        <Footer/>
         <Toaster />
       </BrowserRouter>
     </>
