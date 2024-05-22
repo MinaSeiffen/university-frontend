@@ -2,21 +2,21 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-[#240F6E] text-white">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
+    <footer className="relative bg-[#240F6E] w-fit text-white">
+      <div className="  w-auto p-4 py-6 lg:px-[72px] ">
+        <div className=" md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="" className="flex items-center">
               <img
                 src="src/assets/Frame 1.svg"
-                className="h-[124px] w-[272px] ms-[73px] mt-9 me-[236px]"
+                className="h-[124px] w-[272px] mt-9 me-[236px]"
                 alt="FlowBite Logo"
               />
             </a>
-            <div>
+            <div className="mt-10 mb-8 w-[500px]">
               <p className="text-[16px]">We help students find the right university in Russia.</p>
             </div>
-            <div className="flex mt-4 sm:justify-center sm:mt-0">
+            <div className="flex mb-[183px] sm:justify-center sm:mt-0">
               <a href="#" className="text-white">
                 <svg
                   className="w-4 h-4"
@@ -95,63 +95,63 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+          <div className="flex  gap-40 w-auto">
+            <div className="w-full">
+              <h2 className="font-medium	 mb-6 text-[20px] mt-[86px]  text-white uppercase dark:text-white">
                 Company
               </h2>
-              <ul className="text-white  font-medium">
-                <li className="mb-4">
-                  <a href="" className="">
+              <ul className="w-full text-white ">
+                <li className="mb-4 w-full">
+                  <a href="#" className="text-[16px] font-normal w-full">
                     About STUDY ABROAD
                   </a>
                 </li>
-                <li>
-                  <a href="" className="">
+                <li className="w-full">
+                  <a href="#" className="text-[16px] font-normal w-fit">
                     Contact us
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+            <div className="w-full">
+              <h2 className="font-medium	 mb-6 text-[20px] mt-[86px]  text-white uppercase dark:text-white">
                 For students
               </h2>
-              <ul className="text-white  font-medium">
+              <ul className="w-fit text-white ">
                 <li className="mb-4">
-                  <a href="" className=" ">
+                  <a href="#" className="text-[16px] font-normal w-fit">
                     Study in Russia
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="" className="">
+                  <a href="#" className="text-[16px] font-normal w-fit">
                     Find a university
                   </a>
                 </li>
-                <li>
-                  <a href="" className="">
+                <li className="w-full">
+                  <a href="#" className="text-[16px] font-normal w-fit">
                     Find a course
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+            <div className="w-full">
+              <h2 className="font-medium	 mb-6 text-[20px] mt-[86px]  text-white uppercase dark:text-white">
                 Legal
               </h2>
-              <ul className="text-white  font-medium">
+              <ul className="w-fit text-white">
                 <li className="mb-4">
-                  <a href="#" className="">
+                  <a href="#" className="text-[16px] font-normal w-fit">
                     Privacy Policy
                   </a>
                 </li>
-                <li>
-                  <a href="#" className="">
+                <li className="w-fit">
+                  <a href="#" className="text-[16px] font-normal w-fit">
                     Terms &amp; Conditions
                   </a>
                 </li>
                 <li className="mt-4">
-                  <a href="#" className="">
+                  <a href="#" className="text-[16px] font-normal w-fit">
                     Disclaimer
                   </a>
                 </li>
@@ -159,8 +159,12 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+
       </div>
+      <img src="src/assets/bicycle (1) 1.svg" alt="" className="absolute start-[273px] bottom-9" />
+      <img src="src/assets/icon-park-outline_tree-two.svg" alt="" className="absolute end-28 bottom-9" />
+      <img src="src/assets/la_university.svg" alt="" className="absolute end-52 bottom-6" />
+        <hr className=" w-full absolute start-0 bottom-9 border-gray-200  dark:border-gray-700 " />
     </footer>
   );
 }
