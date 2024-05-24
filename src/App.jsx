@@ -17,6 +17,7 @@ import SignUp from "./Pages/SignUp/SignUp"
 import Navbar from "./components/Navbar/index"
 import Footer from "./components/footer";
 import Apply from "./Pages/Apply/Apply";
+import Login from "./Pages/Login/Login";
 
 function App() {
   return (
@@ -25,8 +26,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/apply" element={<Apply />} />
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/universities' element={< Universities />} />
           <Route path='/how_to_apply' element={<HowToApply />} />
           <Route path='/contact_us' element={<ContactUs />} />

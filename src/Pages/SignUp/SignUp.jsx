@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CountryDropdown from "../../components/CountryDropdown/CountryDropdown";
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import useSignup from "../../Hooks/useSignup";
 
 const SignUp = () => {
@@ -153,6 +153,7 @@ const SignUp = () => {
       <button type="submit" className="lg:w-[184px] lg:h-[54px] mx-auto rounded-[10px] lg:py-[12px] lg:px-[6px] bg-[#240F6E] lg:mt-[8px]">
         <p className="font-merriweather font-normal text-[24px] leading-[30.17px] text-[#FFFFFF] w-[176px] -mr-[15px]">Create account</p>
       </button>
+      <p className="w-[290px] h-[60px] font-merriweather font-normal text-[20px] text-[#240F6E] mx-auto">Have an account? <Link to='/login'><span className="font-bold text-black underline">Login here</span></Link></p>
     </form>
         </div>
       </div>

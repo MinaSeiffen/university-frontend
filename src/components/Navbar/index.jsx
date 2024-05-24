@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from 'react';
-import { NavLink  } from 'react-router-dom'
+import { Link, NavLink  } from 'react-router-dom'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,9 +47,11 @@ export default function Navbar() {
 
         </div>
         <div className={`w-full md:flex md:items-center md:w-auto font-[merriweather] ${isMenuOpen ? '' : 'hidden'}`} id="navbar-default">
+          <Link to='/sign-up'>
           <button className="rounded-lg px-10 py-1 text-white bg-[#240F6E] font-[merriweather] text-[20px] hover:bg-blue-900 md:ml-4 mt-2 md:mt-0">
             Sign Up
           </button>
+          </Link>
 
         </div>
       </div>
