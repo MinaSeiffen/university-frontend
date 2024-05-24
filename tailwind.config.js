@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'merriweather': ['Merriweather', 'serif'],
-      },
+      }
     },
   },
   plugins: [

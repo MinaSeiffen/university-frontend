@@ -12,6 +12,7 @@ import SignUp from "./Pages/SignUp/SignUp"
 
 import Navbar from "./components/Navbar/index"
 import Footer from "./components/footer";
+import Apply from "./Pages/Apply/Apply";
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/apply" element={<Apply />} />
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
         <Toaster />
       </BrowserRouter>
     </>

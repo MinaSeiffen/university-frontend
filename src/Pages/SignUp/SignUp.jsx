@@ -101,7 +101,7 @@ const SignUp = () => {
         />
         {errors.phoneNumber && <p className="-mt-[20px] text-[13px] text-red-500">{errors.phoneNumber.message}</p>}
       </label>
-      <label className="lg:w-[852px] lg:h-[284px] flex lg:flex-col lg:gap-[20px]">
+      <label className="lg:w-[852px] lg:h-[284px] flex lg:flex-col lg:gap-[20px] z-0">
         <p className="font-merriweather font-normal text-[24px] leading-[30.17px] text-[#240F6E] lg:w-[200px] inline">
           Password
           <span className="text-[#D60000] font-merriweather font-normal text-[24px] leading-[30.17px]">*</span>
@@ -117,7 +117,7 @@ const SignUp = () => {
               message: 'Password must contain upper and lower case letters, a number, and a special character' 
             }
           })}
-          className="block lg:w-[852px] lg:h-[56px] rounded-[10px] border border-[#212121] lg:p-[16px] leading-[25.14px] text-[30px] font-merriweather font-normal text-[#212121]"
+          className="block lg:w-[852px] lg:h-[56px] rounded-[10px] border border-[#212121] lg:p-[16px] leading-[25.14px] text-[30px] font-merriweather font-normal z-0 text-[#212121]"
         />
 
         {errors.password && <p className="-mt-[20px] text-[13px] text-red-500">{errors.password.message}</p>}
