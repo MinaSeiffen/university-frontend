@@ -38,7 +38,7 @@ const CountryDropdown = ({ selectedCountry, setSelectedCountry }) => {
     <div className="absolute z-50 w-[122px] h-[56px] bg-transparent" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="w-[122px] bg-transparent h-[56px] rounded-[10px] flex items-center justify-between bg-transparent border border-[#212121] px-4 py-4 pl-[16px] shadow leading-tight"
+        className="w-[122px] h-[56px] rounded-[10px] flex items-center justify-between bg-transparent border border-[#212121] px-4 py-4 pl-[16px] shadow leading-tight"
       >
         <div className="flex items-center">
           <img src={selectedCountry.flag} alt={selectedCountry.value} className="w-[24px] h-[17.33px] mr-2"/>

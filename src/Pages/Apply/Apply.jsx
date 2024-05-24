@@ -108,10 +108,10 @@ const Apply = () => {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const updatedFormData = { ...formData, phone: `${selectedCountry.phoneCode}${formData.phone}` };
     setFormData(updatedFormData);
-    postApplication(updatedFormData);
+    await postApplication(updatedFormData);
 };
 
   
