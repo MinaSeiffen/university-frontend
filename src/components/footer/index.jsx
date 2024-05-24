@@ -1,87 +1,87 @@
 // import React from "react";
+import { FaSquareFacebook, FaSquareWhatsapp, FaSquareInstagram } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <footer className="relative bg-[#240F6E] text-white h-screen">
-      <div className="container mx-auto py-6 px-4 lg:px-8 lg:py-[53px]">
+    <footer className="bg-[#240F6E] text-[#FFFFFF] font-[Inter] mt-20">
+      <div className="mx-auto w-full max-w-screen-xl p-8 pt-20 pe-5">
         <div className="flex justify-between">
-          <div className="mb-8 w-fit md:mb-0">
-            <a href="#" className="flex items-center">
-              <img
-                src="src/assets/Frame 1.svg"
-                className="h-24 w-auto"
-                alt="FlowBite Logo"
-              />
-            </a>
-            <div className="mt-6 w-[500px]">
-              <p className="text-sm md:text-base">We help students find the right university in Russia.</p>
-            </div>
-            <div className="flex mt-6 justify-center md:justify-start">
-              <a href="#" className="text-white mr-4">
-                {/* <!-- Facebook Icon --> */}
-                <svg
-                  className="w-4 h-4"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 8 19"
-                >
-                  {/* <!-- Facebook path --> */}
-                </svg>
+          <div className="mb-6 md:mb-0 w-90">
+            <img src="src/assets/Frame 1.svg" className="h-[120px] me-3 -mt-[40px]" alt="FlowBite Logo" />
+
+            <p className="text-[16px] mt-10 mb-5">We help students find the right university in Russia.</p>
+            <div className="flex text-[20px]">
+              <a href="########" aria-label="Facebook" className='md:ml-[120px] mr-[10px]'>
+                < FaSquareFacebook />
               </a>
-              {/* <!-- Add other social media icons here --> */}
+              <a href="########" aria-label="Facebook" className='mr-[10px]'>
+                < FaSquareWhatsapp />
+              </a>
+              <a href="########" aria-label="Facebook" className='mr-[10px]'>
+                < FaSquareInstagram />
+              </a>
             </div>
           </div>
+
           <div>
-            <h2 className="font-medium text-lg mb-6 mt-8 uppercase">Company</h2>
-            <ul className="text-sm md:text-base">
+            <h2 className="mb-6 text-[20px] font-semibold dark:text-white">Company</h2>
+            <ul className="dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <a href="#" className="text-white">About STUDY ABROAD</a>
+                <p className="text-[16px]">About STUDY ABROAD</p>
               </li>
               <li>
-                <a href="#" className="text-white">Contact us</a>
+                <p className="text-[16px]">Contact us</p>
               </li>
             </ul>
           </div>
+
           <div>
-            <h2 className="font-medium text-lg mb-6 mt-8 uppercase">For students</h2>
-            <ul className="text-sm md:text-base">
+            <h2 className="mb-6 text-[20px] font-semibold dark:text-white">Follow us</h2>
+            <ul className="dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <a href="#" className="text-white">Study in Russia</a>
+                <p className="text-[16px]">Study in Russia</p>
               </li>
               <li className="mb-4">
-                <a href="#" className="text-white">Find a university</a>
+                <p className="text-[16px]">Find a university</p>
               </li>
               <li>
-                <a href="#" className="text-white">Find a course</a>
+                <p className="text-[16px]">Find a course</p>
               </li>
             </ul>
           </div>
+
           <div>
-            <h2 className="font-medium text-lg mb-6 mt-8 uppercase">Legal</h2>
-            <ul className="text-sm md:text-base">
+            <h2 className="mb-6 text-[20px] font-semibold dark:text-white">Legal</h2>
+            <ul className="dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <a href="#" className="text-white">Privacy Policy</a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="text-white">Terms & Conditions</a>
+                <p className="text-[16px]">Privacy Statement</p>
               </li>
               <li>
-                <a href="#" className="text-white">Disclaimer</a>
+                <p className="text-[16px]">Terms & Conditions</p>
+              </li>
+              <li>
+                <p className="text-[16px]">Disclaimer</p>
               </li>
             </ul>
           </div>
         </div>
-      </div>
-      <div className>
+        <div className='flex mt-20'>
 
-      <img src="src/assets/bicycle (1) 1.svg" alt="" className="absolute left-[17rem] bottom-9 hidden md:block" />
-      <img src="src/assets/icon-park-outline_tree-two.svg" alt="" className="absolute right-28 bottom-9 hidden md:block" />
-      <img src="src/assets/la_university.svg" alt="" className="absolute right-52 bottom-6 hidden lg:block" />
-      <hr className="w-full absolute bottom-9 border-gray-200 dark:border-gray-700" />
+          <img className="ml-60 -mt-[24px]" src="src/assets/bicycle (1) 1.svg" alt="la_university" />
+
+          <img className="ml-[650px]" src="src/assets/la_university.svg" alt="la_university" />
+
+          <img className="ml-[50px]" src="src/assets/icon-park-outline_tree-two.svg " alt="la_university" />
+
+        </div>
+        <hr className="-mt-[12px]" />
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
+
+// src/assets/bicycle (1) 1.svg
+// src/assets/icon-park-outline_tree-two.svg
+// src/assets/la_university.svg
