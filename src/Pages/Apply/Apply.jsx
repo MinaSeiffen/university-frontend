@@ -258,8 +258,8 @@ const Apply = () => {
                 </select>
               </label>
               <label className="lg:w-[852px] lg:h-[110px] flex lg:flex-col lg:gap-[24px]">
-                <p className="font-merriweather font-normal text-[24px] leading-[30.17px] text-[#240F6E] lg:w-[424px] inline">
-                  What is your country of residence?*
+                <p className="font-merriweather font-normal text-[24px] leading-[30.17px] text-[#240F6E] lg:w-[589px] inline">
+                What is your maximum budget for tuition fees?*
                 </p>
                 <select
                   name="rangeOfBudget"

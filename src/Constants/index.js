@@ -16,3 +16,15 @@ export const budgetRanges = [
     {label: 'USD 3500-5000 per year' , value: "USD 3500-5000 per year"},
     {label: 'USD 4500-6000 per year' , value: "USD 4500-6000 per year"},
 ]
+
+export const contactTitles = [
+    {title : 'for students and parents'},
+    {title : 'parternship and advertising'}
+]
+
+export const contactTypes = [
+    {label: 'opinion' , value: 'opinion'},
+    {label: 'complain' , value: 'complain'},
+    {label: 'inquiry' , value: 'inquiry'},
+    {label: 'other' , value: 'other'},
+]
