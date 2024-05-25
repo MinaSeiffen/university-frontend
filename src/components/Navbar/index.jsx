@@ -31,13 +31,13 @@ export default function Navbar() {
         <div className={`w-full md:flex md:items-center md:w-auto font-[merriweather] ${isMenuOpen ? '' : 'hidden'}`} id="navbar-default">
           <ul className="font-medium flex flex-col text-[20px] md:flex-row md:items-center md:space-x-8 p-4 md:p-0 md:mt-0 rounded-lg dark:bg-gray-800 md:dark:bg-gray-900 ">
             <li>
-              <NavLink to='/home' className="block text-white py-2 px-3 text-gray-900 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Home</NavLink>
+              <NavLink to='/' className="block text-white py-2 px-3 text-gray-900 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Home</NavLink>
             </li>
             <li>
               <NavLink to='/universities' className="block text-white py-2 px-3 text-gray-900 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Universities</NavLink>
             </li>
             <li>
-              <NavLink to='/how_to_app' className="block text-white py-2 px-3 text-gray-900 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">How to Apply</NavLink>
+              <NavLink to='/howToApply' className="block text-white py-2 px-3 text-gray-900 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">How to Apply</NavLink>
             </li>
             <li>
               <NavLink to='/contact_us' className="block text-white py-2 px-3 text-gray-900 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact Us</NavLink>
