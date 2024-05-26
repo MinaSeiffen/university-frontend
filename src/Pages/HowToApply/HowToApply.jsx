@@ -1,12 +1,11 @@
 import React from 'react'
 import { FaGreaterThan } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const HowToApply = () => {
   return (
     <>
-      <div className="w-full h-[1px] bg-stone-200 mt-[65px]"> </div>
-
-      <section className='flex font-[Merriweather] mt-[90px] '>
+      <section className='flex font-[Merriweather] mt-[192px] '>
         <div className='w-[1020px] h-[304px] bg-[#C8E1FC] ml-[120px] pt-[40px] pl-[50px] rounded-lg'>
           <h3 className='text-[32px] mb-5'>How to apply?</h3>
           <p className='text-[24px] w-[646px] h-[120px] text-[#212121]'>Applying to study abroad is very exciting, but it can
@@ -42,7 +41,7 @@ const HowToApply = () => {
             <div className='w-[300px] h-[128px] mb-10'>
               <h4 className='text-[24px]'>Choose your university</h4>
               <p className='text-[20px] text-[#000000]'>Our friendly advisors can <br /> help you explore your options.</p>
-              <a href="#" className='flex text-[#240F6E] text-[20px]' >Find a university < FaGreaterThan className='ml-4 mt-[5px]' /></a>
+              <Link to='/search' className='flex text-[#240F6E] text-[20px]' > Find a university < FaGreaterThan className='ml-4 mt-[5px]' /></Link>
             </div>
 
             <div className='w-[317px] h-[88px] mb-12'>

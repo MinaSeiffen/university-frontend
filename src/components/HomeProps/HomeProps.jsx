@@ -7,7 +7,7 @@ const HomeProps = ({ image, titel, description, image2, titel2, description2 }) 
 
             <div className="flex flex-col md:flex-row items-center justify-center py-5 font-[Merriweather]">
                 <div className="md:flex-1 flex-col items-start md:items-center md:text-left text-center ">
-                    <h2 className="text-[32px] text-[32px] sm:m-[auto] md:ml-[85px]">
+                    <h2 className="text-[32px]  sm:m-[auto] md:ml-[85px]">
                         {titel}
                     </h2>
                     <p className="sm:m-[auto] md:ml-[85px] text-[24px] md:w-[591px]">
