@@ -18,6 +18,7 @@ import Navbar from "./components/Navbar/index"
 import Footer from "./components/footer";
 import Apply from "./Pages/Apply/Apply";
 import Login from "./Pages/Login/Login";
+import LearnMore from "./Pages/Learn More/LearnMore";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
           <Route path='/universities' element={< Universities />} />
           <Route path='/howToApply' element={<HowToApply />} />
           <Route path='/contact_us' element={<ContactUs />} />
+
+          <Route path='/learnMore/:id' element={<LearnMore />} />
         </Routes>
         <Footer />
         <Toaster />

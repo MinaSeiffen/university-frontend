@@ -4,9 +4,7 @@ import { FaGreaterThan } from "react-icons/fa6";
 const HowToApply = () => {
   return (
     <>
-      <div className="w-full h-[1px] bg-stone-200 mt-[65px]"> </div>
-
-      <section className='flex font-[Merriweather] mt-[90px] '>
+      <section className='flex font-[Merriweather] mt-[192px] '>
         <div className='w-[1020px] h-[304px] bg-[#C8E1FC] ml-[120px] pt-[40px] pl-[50px] rounded-lg'>
           <h3 className='text-[32px] mb-5'>How to apply?</h3>
           <p className='text-[24px] w-[646px] h-[120px] text-[#212121]'>Applying to study abroad is very exciting, but it can

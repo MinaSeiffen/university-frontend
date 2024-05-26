@@ -55,6 +55,7 @@ export default function Navbar() {
 
         </div>
       </div>
+      <div className="w-full h-[1px] bg-stone-200"> </div>
     </nav>
   );
 }
