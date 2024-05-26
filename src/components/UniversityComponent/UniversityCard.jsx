@@ -2,7 +2,7 @@ import React from 'react';
 import { FaLocationDot } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
-const UniversityCard = ({university }) => {
+const UniversityCard = ({university}) => {
   return (
     <section className="w-full mt-10 ">
       <div className="w-full max-w-md mx-auto bg-[#F5F5F5] rounded-xl border border-[#240F6E] overflow-hidden md:max-w-5xl mt-8">
