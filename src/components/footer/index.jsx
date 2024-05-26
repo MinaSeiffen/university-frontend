@@ -36,7 +36,7 @@ function Footer() {
           </div>
 
           <div>
-            <h2 className="mb-6 text-[20px] font-semibold dark:text-white">Follow us</h2>
+            <h2 className="mb-6 text-[20px] font-semibold dark:text-white">For students</h2>
             <ul className="dark:text-gray-400 font-medium">
               <li className="mb-4">
                 <p className="text-[16px]">Study in Russia</p>
@@ -60,7 +60,7 @@ function Footer() {
                 <p className="text-[16px]">Terms & Conditions</p>
               </li>
               <li>
-                <p className="text-[16px]">Disclaimer</p>
+                <p className="text-[16px] mt-4">Disclaimer</p>
               </li>
             </ul>
           </div>
@@ -74,7 +74,7 @@ function Footer() {
           <img className="ml-[50px]" src="src/assets/icon-park-outline_tree-two.svg " alt="la_university" />
 
         </div>
-        <hr className="-mt-[12px]" />
+        <hr className="-mt-[12px] leading-[1440px]" />
       </div>
     </footer>
   );
@@ -82,6 +82,3 @@ function Footer() {
 
 export default Footer;
 
-// src/assets/bicycle (1) 1.svg
-// src/assets/icon-park-outline_tree-two.svg
-// src/assets/la_university.svg
