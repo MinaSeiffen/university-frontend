@@ -1,6 +1,8 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const FindUniversityCard = ({university}) => {
+
+const FindUniversityCard = ({ university }) => {
   return (
     <section className="w-full ">
       <div className="w-[1007px] h-[184px] mx-auto bg-[#C8E1FC] rounded-[10px]  overflow-hidden md:max-w-5xl mt-8">
@@ -14,7 +16,9 @@ const FindUniversityCard = ({university}) => {
           </div>
 
           <div className="py-16 px-6 justify-center ">
-            <div className="tracking-wide w-[743px] h-[40px] text-[32px] text-[#240F6E] font-['Merriweather']">{university.titleUniv}</div>
+            <div className="tracking-wide w-[743px] h-[40px] text-[32px] text-[#240F6E] font-['Merriweather']">
+              <Link to={`/learnMore/${university.id}`}>{university.titleUniv}</Link>
+            </div>
           </div>
         </div>
       </div>
