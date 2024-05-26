@@ -18,12 +18,14 @@ import Navbar from "./components/Navbar/index"
 import Footer from "./components/footer";
 import Apply from "./Pages/Apply/Apply";
 import Login from "./Pages/Login/Login";
+import FindUniversity from "./Pages/Search/FindUniversity";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Header />
+        <FindUniversity/>
         <Routes>
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
