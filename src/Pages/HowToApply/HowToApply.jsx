@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaGreaterThan } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const HowToApply = () => {
   return (
@@ -40,7 +41,7 @@ const HowToApply = () => {
             <div className='w-[300px] h-[128px] mb-10'>
               <h4 className='text-[24px]'>Choose your university</h4>
               <p className='text-[20px] text-[#000000]'>Our friendly advisors can <br /> help you explore your options.</p>
-              <a href="#" className='flex text-[#240F6E] text-[20px]' >Find a university < FaGreaterThan className='ml-4 mt-[5px]' /></a>
+              <Link to='/search' className='flex text-[#240F6E] text-[20px]' > Find a university < FaGreaterThan className='ml-4 mt-[5px]' /></Link>
             </div>
 
             <div className='w-[317px] h-[88px] mb-12'>

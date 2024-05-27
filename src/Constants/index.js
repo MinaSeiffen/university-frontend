@@ -216,3 +216,4 @@ export const contactTypes = [
     {label: 'inquiry' , value: 'inquiry'},
     {label: 'other' , value: 'other'},
 ]
+

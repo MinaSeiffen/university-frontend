@@ -45,20 +45,20 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative h-screen bg-cover bg-center">
+      <div className="relative bg-cover bg-black w-[1440px] h-[1024px]">
         <img
-          className="w-full -h-[900px] h-screen absolute"
+          className="absolute opacity-65 w-[1440px] h-[1024px] "
           src="src/assets/Home.jfif"
           alt="Studying in Russia"
         />
-        <div className="absolute   px-20 mt-40">
-          <div className=" font-[Merriweather] text-white">
-            <p className="text-[50px] md:w-[480px] lg:w-[480px]" >
+        <div className="absolute ml-[48px] mt-[352px]">
+          <div className="font-[Merriweather] text-white justify-space-between">
+            <p className="text-[56px] w-[622px] h-[210px] mb-[56px]">
               Discover your perfect
               route to studying at a
               top university abroad.
             </p>
-            <button className="text-white text-[24px] font-normal bg-[#240F6E] rounded-lg m-5 px-10 py-2 ml-0 mt-9 hover:bg-blue-900">
+            <button className="text-white text-[24px] w-[273px] h-[54px] bg-[#240F6E] rounded-lg px-[46px] hover:bg-blue-900">
               All Universities
             </button>
           </div>
@@ -66,14 +66,14 @@ export default function Home() {
       </div>
 
       <div className="font-[Merriweather]">
-        <h2 className="text-[#240F6E] text-[32px] sm:ml-[30px] md:ml-[110px] lg:ml-[75px] sm:mt-20  md:mt-20  lg:mt-20">
+        <h2 className="text-[#240F6E] text-[32px] ml-[120px] sm:mt-20  md:mt-20  lg:mt-20">
           Study in Russia: A Premier Educational Destination
         </h2>
         <div className="mt-4">
-          <h3 className="text-[32px] sm:ml-[30px] md:ml-[75px]">
+          <h3 className="text-[32px] ml-[120px]">
             Discover Educational Opportunities in Russia
           </h3>
-          <p className="text-[24px] sm:ml-[30px] md:ml-[75px] mt-2">
+          <p className="text-[24px] ml-[120px] mt-2">
             Russia is one of the most attractive study destinations for
             international students, thanks to its <br /> world-ranked
             universities and diverse academic programs. Russian universities
@@ -86,7 +86,7 @@ export default function Home() {
       </div>
 
       <div className='mt-[50px]'>
-        <h2 className="text-[#240F6E] text-[32px] sm:ml-[30px] md:ml-[75px]">
+        <h2 className="text-[#240F6E] text-[32px] ml-[120px]">
           Benefits of Studying in Russia:
         </h2>
       </div>
@@ -103,7 +103,7 @@ export default function Home() {
         />
       ))}
 
-      <h2 className="text-[#5B4B92] text-[32px] sm:ml-[30px] md:ml-[80px] lg:ml-[80px] md:mt-10 lg:mt-10 ">
+      <h2 className="text-[#5B4B92] text-[32px] ml-[120px] md:mt-10 lg:mt-10 ">
         Some Student Success Stories
       </h2>
 
