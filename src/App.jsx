@@ -14,8 +14,12 @@ import Navbar from "./components/Navbar/index";
 import Footer from "./components/footer";
 import Apply from "./Pages/Apply/Apply";
 import Login from "./Pages/Login/Login";
+
+import FindUniversity from "./Pages/Search/FindUniversity";
+
 import LearnMore from "./Pages/Learn More/LearnMore";
 import Profile from "./Pages/Profile/Profile";
+
 
 function App() {
   return (
@@ -23,15 +27,16 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
+          <Route path='/' element={<Home />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/apply" element={<Apply />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/universities" element={<Universities />} />
-          <Route path="/howToApply" element={<HowToApply />} />
-          <Route path="/contact_us" element={<ContactUs />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/learnMore/:id" element={<LearnMore />} />
+          <Route path='/universities' element={< Universities />} />
+          <Route path='/howToApply' element={<HowToApply />} />
+          <Route path='/contact_us' element={<ContactUs />} />
+          <Route path='/search' element={<FindUniversity/>} />
+          <Route path='/learnMore/:id' element={<LearnMore />} />
         </Routes>
         <Footer />
         <Toaster />
