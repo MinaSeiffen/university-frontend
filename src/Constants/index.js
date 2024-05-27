@@ -30,7 +30,6 @@ export const budgetRanges = [
     {label: 'USD 4500-6000 per year' , value: "USD 4500-6000 per year"},
 ]
 
-<<<<<<< HEAD
 export const universities = [
     {
         id:'1',
@@ -204,7 +203,6 @@ export const universities = [
         c3: 'Phone: [Provide specific phone number]',
     },
 ]
-=======
 export const contactTitles = [
     {title : 'for students and parents'},
     {title : 'parternship and advertising'}
@@ -216,4 +214,3 @@ export const contactTypes = [
     {label: 'inquiry' , value: 'inquiry'},
     {label: 'other' , value: 'other'},
 ]
->>>>>>> origin/main
