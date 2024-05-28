@@ -8,6 +8,7 @@ import localImage5 from '../../assets/man.png'
 import localImage6 from '../../assets/woman.png'
 import HomeProps from "../../components/HomeProps/HomeProps";
 import HomeProps2 from "../../components/HomeProps/HomeProps2";
+import { Link } from "react-router-dom";
 
 export default function Home() {
 
@@ -53,13 +54,13 @@ export default function Home() {
         />
         <div className="absolute ml-[48px] mt-[352px]">
           <div className="font-[Merriweather] text-white justify-space-between">
-            <p className="text-[56px] w-[622px] h-[210px] mb-[56px]">
+            <p className="text-[56px] w-[622px] h-[210px] mb-[56px] leading-[70.39px]">
               Discover your perfect
               route to studying at a
               top university abroad.
             </p>
             <button className="text-white text-[24px] w-[273px] h-[54px] bg-[#240F6E] rounded-lg px-[46px] hover:bg-blue-900">
-              All Universities
+              <Link to="/universities">All Universities</Link>
             </button>
           </div>
         </div>

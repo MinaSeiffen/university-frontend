@@ -1,5 +1,10 @@
 // import React from "react";
-import { FaSquareFacebook, FaSquareWhatsapp, FaSquareInstagram } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { RiInstagramFill } from "react-icons/ri";
+
+
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -11,14 +16,14 @@ function Footer() {
 
             <p className="text-[16px] mt-10 mb-5">We help students find the right university in Russia.</p>
             <div className="flex text-[20px]">
-              <a href="########" aria-label="Facebook" className='md:ml-[120px] mr-[10px]'>
-                < FaSquareFacebook />
+              <a href="https://www.facebook.com" aria-label="Facebook" className='md:ml-[120px] mr-[24px]'>
+                < FaFacebook className="w-6" />
               </a>
-              <a href="########" aria-label="Facebook" className='mr-[10px]'>
-                < FaSquareWhatsapp />
+              <a href="https://web.whatsapp.com/" aria-label="whatsapp" className='mr-[24px]'>
+                < IoLogoWhatsapp className="w-6" />
               </a>
-              <a href="########" aria-label="Facebook" className='mr-[10px]'>
-                < FaSquareInstagram />
+              <a href="https://www.instagram.com/" aria-label="instagram">
+                < RiInstagramFill  className="w-6" />
               </a>
             </div>
           </div>
@@ -27,10 +32,10 @@ function Footer() {
             <h2 className="mb-6 text-[20px] font-semibold dark:text-white">Company</h2>
             <ul className="dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <p className="text-[16px]">About STUDY ABROAD</p>
+                <p className="text-[16px]"><Link  to="#"> About STUDY ABROAD </Link></p>
               </li>
               <li>
-                <p className="text-[16px]">Contact us</p>
+                <p className="text-[16px]"><Link  to="/contact_us"> Contact us </Link></p>
               </li>
             </ul>
           </div>
@@ -39,13 +44,13 @@ function Footer() {
             <h2 className="mb-6 text-[20px] font-semibold dark:text-white">For students</h2>
             <ul className="dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <p className="text-[16px]">Study in Russia</p>
+                <p className="text-[16px]"><Link to="/"> Study in Russia</Link></p>
               </li>
               <li className="mb-4">
-                <p className="text-[16px]">Find a university</p>
+                <p className="text-[16px]"><Link to="/search"> Find a university</Link></p>
               </li>
               <li>
-                <p className="text-[16px]">Find a course</p>
+                <p className="text-[16px]"><Link to="#"> Find a course </Link></p>
               </li>
             </ul>
           </div>
@@ -54,13 +59,13 @@ function Footer() {
             <h2 className="mb-6 text-[20px] font-semibold dark:text-white">Legal</h2>
             <ul className="dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <p className="text-[16px]">Privacy Statement</p>
+                <p className="text-[16px]"><Link to="#"> Privacy Statement </Link></p>
               </li>
               <li>
-                <p className="text-[16px]">Terms & Conditions</p>
+                <p className="text-[16px]"><Link to="#"> Terms & Conditions </Link></p>
               </li>
               <li>
-                <p className="text-[16px] mt-4">Disclaimer</p>
+                <p className="text-[16px] mt-4"><Link to="#"> Disclaimer </Link></p>
               </li>
             </ul>
           </div>

@@ -8,18 +8,20 @@ export default function FindUniversity() {
   const [filteredUniversities, setFilteredUniversities] = useState(universities);
 
   const handleSearchChange = (event) => {
-    const text = event.target.value;
+    const text = event.target.value.toLowerCase(); // Convert the search text to lowercase
     setSearchText(text);
 
-    if (text !== '') {
-      const searchResults = universities.filter((university) =>
-        university.titleUniv.toLowerCase().includes(text.toLowerCase())
-      );
-      setFilteredUniversities(searchResults);
+    if (text !== "") {
+        const searchResults = universities.filter(
+            (university) =>
+              university.titleUniv.toLowerCase().includes(text) ||
+              university.department.some(dep => dep.toLowerCase().includes(text))
+        );
+        setFilteredUniversities(searchResults);
     } else {
-      setFilteredUniversities(universities);
+        setFilteredUniversities(universities);
     }
-  };
+};
 
   // Sort filtered universities
   const sortedUniversities = filteredUniversities.slice().sort((a, b) => a.titleUniv.localeCompare(b.titleUniv));
