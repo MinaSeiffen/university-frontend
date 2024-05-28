@@ -6,8 +6,9 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const isRootPath = location.pathname === "/";
-  const isRootpath2 = location.pathname === "/sign-up";
-
+const token=1;
+const visibleProfile = token === 1 ? "visible" : "hidden";
+const visibleBtn = token === 1 ? "hidden " : "visible";
   const handleToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -56,7 +57,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to="/"
-                className={`block py-2 px-3 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ${isRootPath ? "text-white" : "text-[#212121]"
+                className={`block py-2 px-3 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-[#240F6E] md:p-0 ${isRootPath ? "text-white" : "text-[#212121]"
                   }`}
               >
                 Home
@@ -65,7 +66,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to="/universities"
-                className={`block py-2 px-3 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ${isRootPath ? "text-white" : "text-[#212121]"
+                className={`block py-2 px-3 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-[#240F6E] md:p-0 ${isRootPath ? "text-white" : "text-[#212121]"
                   }`}
               >
                 Universities
@@ -74,7 +75,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to="/howToApply"
-                className={`block py-2 px-3 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ${isRootPath ? "text-white" : "text-[#212121]"
+                className={`block py-2 px-3 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-[#240F6E] md:p-0 ${isRootPath ? "text-white" : "text-[#212121]"
                   }`}
               >
                 How to Apply
@@ -83,7 +84,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to="/contact_us"
-                className={`block py-2 px-3 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ${isRootPath ? "text-white" : "text-[#212121]"
+                className={`block py-2 px-3 rounded hover:bg-[#240F6E] md:hover:bg-transparent md:border-0 md:hover:text-[#240F6E] md:p-0 ${isRootPath ? "text-white" : "text-[#212121]"
                   }`}
               >
                 Contact Us
@@ -93,19 +94,21 @@ export default function Navbar() {
         </div>
 
         <div
-          className={`w-full md:flex md:items-center md:w-auto font-[merriweather] ${isMenuOpen ? "" : "hidden"
+          className={`w-full md:flex md:items-center md:w-auto font-[merriweather]  ${isMenuOpen ? "" : "hidden"
             }`}
           id="navbar-default"
         >
           <Link to="/sign-up">
 
-          {isRootpath2 ? (
-            <FaCircleUser  className="text-[35px]"/>
-          ) : (
-            <button className="rounded-lg px-10 py-1 text-white bg-[#240F6E] font-[merriweather] text-[20px] hover:bg-blue-900 md:ml-4 mt-2 md:mt-0">
-            Sign Up
+         
+            <button className={`rounded-lg px-10 py-1 text-white ${visibleBtn}  bg-[#240F6E] font-[merriweather] text-[20px] hover:bg-blue-900 md:ml-4 mt-2 md:mt-0`}>
+            Log in
           </button>
-          )}
+          <button className={`rounded-lg px-10 py-1 text-white  ${visibleProfile}   text-[54px] ${isRootPath ? "text-white" : "text-[#212121]"
+                  }`}
+              >
+            <FaCircleUser  className="text-[35px]"/>
+          </button>
 
           </Link>
         </div>
