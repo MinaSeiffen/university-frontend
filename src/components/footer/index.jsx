@@ -1,5 +1,6 @@
 // import React from "react";
 import { FaSquareFacebook, FaSquareWhatsapp, FaSquareInstagram } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -30,7 +31,7 @@ function Footer() {
                 <p className="text-[16px]">About STUDY ABROAD</p>
               </li>
               <li>
-                <p className="text-[16px]">Contact us</p>
+                <p className="text-[16px]"><Link  to="/contact_us"> Contact us </Link></p>
               </li>
             </ul>
           </div>
@@ -39,10 +40,10 @@ function Footer() {
             <h2 className="mb-6 text-[20px] font-semibold dark:text-white">For students</h2>
             <ul className="dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <p className="text-[16px]">Study in Russia</p>
+                <p className="text-[16px]"><Link to="/"> Study in Russia</Link></p>
               </li>
               <li className="mb-4">
-                <p className="text-[16px]">Find a university</p>
+                <p className="text-[16px]"><Link to="/search"> Find a university</Link></p>
               </li>
               <li>
                 <p className="text-[16px]">Find a course</p>
