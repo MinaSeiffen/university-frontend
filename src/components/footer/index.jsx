@@ -1,5 +1,9 @@
 // import React from "react";
-import { FaSquareFacebook, FaSquareWhatsapp, FaSquareInstagram } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { RiInstagramFill } from "react-icons/ri";
+
+
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -12,14 +16,14 @@ function Footer() {
 
             <p className="text-[16px] mt-10 mb-5">We help students find the right university in Russia.</p>
             <div className="flex text-[20px]">
-              <a href="https://www.facebook.com" aria-label="Facebook" className='md:ml-[120px] mr-[10px]'>
-                < FaSquareFacebook />
+              <a href="https://www.facebook.com" aria-label="Facebook" className='md:ml-[120px] mr-[24px]'>
+                < FaFacebook className="w-6" />
               </a>
-              <a href="https://web.whatsapp.com/" aria-label="Facebook" className='mr-[10px]'>
-                < FaSquareWhatsapp />
+              <a href="https://web.whatsapp.com/" aria-label="whatsapp" className='mr-[24px]'>
+                < IoLogoWhatsapp className="w-6" />
               </a>
-              <a href="https://www.instagram.com/" aria-label="Facebook" className='mr-[10px]'>
-                < FaSquareInstagram />
+              <a href="https://www.instagram.com/" aria-label="instagram">
+                < RiInstagramFill  className="w-6" />
               </a>
             </div>
           </div>

@@ -54,7 +54,7 @@ export default function Home() {
         />
         <div className="absolute ml-[48px] mt-[352px]">
           <div className="font-[Merriweather] text-white justify-space-between">
-            <p className="text-[56px] w-[622px] h-[210px] mb-[56px]">
+            <p className="text-[56px] w-[622px] h-[210px] mb-[56px] leading-[70.39px]">
               Discover your perfect
               route to studying at a
               top university abroad.
