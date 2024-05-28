@@ -14,8 +14,8 @@ export default function FindUniversity() {
     if (text !== "") {
         const searchResults = universities.filter(
             (university) =>
-                university.titleUniv.toLowerCase().includes(text) ||
-             university.department.some(dep => dep.toLowerCase().includes(text))
+              university.titleUniv.toLowerCase().includes(text) ||
+              university.department.some(dep => dep.toLowerCase().includes(text))
         );
         setFilteredUniversities(searchResults);
     } else {

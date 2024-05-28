@@ -28,7 +28,7 @@ function Footer() {
             <h2 className="mb-6 text-[20px] font-semibold dark:text-white">Company</h2>
             <ul className="dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <p className="text-[16px]">About STUDY ABROAD</p>
+                <p className="text-[16px]"><Link  to="#"> About STUDY ABROAD </Link></p>
               </li>
               <li>
                 <p className="text-[16px]"><Link  to="/contact_us"> Contact us </Link></p>
@@ -46,7 +46,7 @@ function Footer() {
                 <p className="text-[16px]"><Link to="/search"> Find a university</Link></p>
               </li>
               <li>
-                <p className="text-[16px]">Find a course</p>
+                <p className="text-[16px]"><Link to="#"> Find a course </Link></p>
               </li>
             </ul>
           </div>
@@ -55,13 +55,13 @@ function Footer() {
             <h2 className="mb-6 text-[20px] font-semibold dark:text-white">Legal</h2>
             <ul className="dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <p className="text-[16px]">Privacy Statement</p>
+                <p className="text-[16px]"><Link to="#"> Privacy Statement </Link></p>
               </li>
               <li>
-                <p className="text-[16px]">Terms & Conditions</p>
+                <p className="text-[16px]"><Link to="#"> Terms & Conditions </Link></p>
               </li>
               <li>
-                <p className="text-[16px] mt-4">Disclaimer</p>
+                <p className="text-[16px] mt-4"><Link to="#"> Disclaimer </Link></p>
               </li>
             </ul>
           </div>
