@@ -25,7 +25,6 @@ export default function FindUniversity() {
   const sortedUniversities = filteredUniversities.slice().sort((a, b) => a.titleUniv.localeCompare(b.titleUniv));
 
   return (
-    <>
       <div className="container mx-auto px-28 py-8 mb-8 mt-20">
         <div className="flex items-center mb-8">
           <label className="font-['Merriweather'] text-[32px] mr-4 w-[392px] h-[40px] leading-[40.22px]">
@@ -56,6 +55,5 @@ export default function FindUniversity() {
           ))}
         </div>
       </div>
-    </>
   );
 }

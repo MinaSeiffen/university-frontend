@@ -19,9 +19,16 @@ import FindUniversity from "./Pages/Search/FindUniversity";
 
 import LearnMore from "./Pages/Learn More/LearnMore";
 import Profile from "./Pages/Profile/Profile";
+import useAuthUser from "./Hooks/useAuthUser";
+import { useEffect } from "react";
+import Spinner from "./components/Spinner/Spinner";
 
 
 function App() {
+  const {getUser , authUser} = useAuthUser()
+  useEffect(() => {
+    getUser();
+  }, []);
   return (
     <>
       <BrowserRouter>
@@ -31,7 +38,7 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/apply" element={<Apply />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<Profile authUser={authUser} />} />
           <Route path='/universities' element={< Universities />} />
           <Route path='/howToApply' element={<HowToApply />} />
           <Route path='/contact_us' element={<ContactUs />} />
