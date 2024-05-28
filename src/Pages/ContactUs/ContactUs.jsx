@@ -8,9 +8,9 @@ const ContactUs = () => {
   const {contactRequest} = useContactRequest()
 
   const defaultCountry = {
-    value: "eg",
-    phoneCode: "+20",
-    flag: "https://flagcdn.com/w20/eg.png",
+    value: "in",
+    phoneCode: "+91",
+    flag: "https://flagcdn.com/w20/in.png",
   };
 
   const [isValid, setIsValid] = useState(false);

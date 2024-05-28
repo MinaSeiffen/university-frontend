@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import CountryDropdown from "../../components/CountryDropdown/CountryDropdown";
-import { budgetRanges, countries, periodOfTime, universities } from "../../Constants";
+import {
+  budgetRanges,
+  countries,
+  periodOfTime,
+  universities,
+} from "../../Constants";
 import NextBackBtns from "../../components/NextBackBtns/NextBackBtns";
 import axiosInstance from "../../Axios/axiosConfig";
 import usePostApplication from "../../Hooks/usePostApplication";
@@ -19,9 +24,9 @@ const Apply = () => {
   }, [id]);
 
   const defaultCountry = {
-    value: "eg",
-    phoneCode: "+20",
-    flag: "https://flagcdn.com/w20/eg.png",
+    value: "in",
+    phoneCode: "+91",
+    flag: "https://flagcdn.com/w20/in.png",
   };
 
   const [selectedCountry, setSelectedCountry] = useState(defaultCountry);
@@ -42,8 +47,8 @@ const Apply = () => {
     rangeOfBudget: "",
     passport: "",
     education: "",
-    universityName: '',
-    imgSrc: '',
+    universityName: "",
+    imgSrc: "",
   });
 
   const handleChange = (e) => {

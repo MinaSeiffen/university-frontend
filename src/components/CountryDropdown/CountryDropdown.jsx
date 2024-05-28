@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import "./CountryDropdown.css";
 
 const countryOptions = [
-  { value: 'eg', phoneCode: '+20', flag: 'https://flagcdn.com/w20/eg.png' },
+  { value: 'ru', phoneCode: '+7', flag: 'https://flagcdn.com/w20/ru.png' },
   { value: 'in', phoneCode: '+91', flag: 'https://flagcdn.com/w20/in.png' },
-  { value: 'za', phoneCode: '+27', flag: 'https://flagcdn.com/w20/za.png' },
+  { value: 'pk', phoneCode: '+92', flag: 'https://flagcdn.com/w20/pk.png' },
 ];
 
 const CountryDropdown = ({ selectedCountry, setSelectedCountry }) => {
