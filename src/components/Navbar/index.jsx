@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { FaCircleUser } from "react-icons/fa6";
-
+import { CgProfile } from "react-icons/cg";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -104,10 +103,9 @@ const visibleBtn = token === 1 ? "hidden " : "visible";
             <button className={`rounded-lg px-10 py-1 text-white ${visibleBtn}  bg-[#240F6E] font-[merriweather] text-[20px] hover:bg-blue-900 md:ml-4 mt-2 md:mt-0`}>
             Log in
           </button>
-          <button className={`rounded-lg px-10 py-1 text-white  ${visibleProfile}   text-[54px] ${isRootPath ? "text-white" : "text-[#212121]"
-                  }`}
-              >
-            <FaCircleUser  className="text-[35px]"/>
+          <button className={`rounded-lg px-10 py-1 text-white  ${visibleProfile} `} >
+            <CgProfile  className={` text-[54px] ${isRootPath ? "text-white" : "text-[#212121]"
+                  }`}/>
           </button>
 
           </Link>
