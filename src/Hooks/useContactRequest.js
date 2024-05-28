@@ -6,7 +6,7 @@ const useContactRequest = () => {
   const contactRequest = async (data) => {
     try {
       const response = await fetch(
-        "https://university-backend.vercel.app/api/contact/request",
+        "https://university-backend-o4hq.onrender.com/api/contact/request",
         {
           method: "POST",
           credentials: "include",

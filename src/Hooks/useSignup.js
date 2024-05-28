@@ -5,7 +5,7 @@ const useSignup = () => {
   const navigate = useNavigate()
   const signUp = async (data) => {
     try {
-      const response = await fetch("https://university-backend.vercel.app/api/auth/signup", {
+      const response = await fetch("https://university-backend-o4hq.onrender.com/api/auth/signup", {
         method: "POST",
         credentials: "include",
         headers: {
