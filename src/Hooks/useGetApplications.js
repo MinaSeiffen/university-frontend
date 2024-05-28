@@ -4,7 +4,7 @@ const useGetApplications = () => {
     const [applications, setApplications] = useState();
     const getApplications = async ()=>{
         try {
-            const response = await fetch('http://localhost:3000/api/application/all-apps' ,{
+            const response = await fetch('https://university-backend.vercel.app/api/application/all-apps' ,{
             method: 'GET',
             credentials: 'include',
         })

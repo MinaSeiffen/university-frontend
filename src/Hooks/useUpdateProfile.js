@@ -4,7 +4,7 @@ const useUpdateProfile = () => {
   const updateProfile = async (formData) => {
     try {
       const response = await fetch(
-        "http://localhost:3000/api/user/update-profile",
+        "https://university-backend.vercel.app/api/user/update-profile",
         {
           method: "PATCH",
           credentials: "include",

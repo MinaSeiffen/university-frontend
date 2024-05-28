@@ -5,7 +5,7 @@ const useLogout = () => {
     const navigate = useNavigate()
   const logout = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/auth/logout", {
+      const response = await fetch("https://university-backend.vercel.app/api/auth/logout", {
         method: "POST",
         credentials: "include",
       });

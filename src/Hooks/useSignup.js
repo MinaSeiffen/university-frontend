@@ -5,7 +5,7 @@ const useSignup = () => {
   const navigate = useNavigate()
   const signUp = async (data) => {
     try {
-      const response = await fetch("http://localhost:3000/api/auth/signup", {
+      const response = await fetch("https://university-backend.vercel.app/api/auth/signup", {
         method: "POST",
         credentials: "include",
         headers: {

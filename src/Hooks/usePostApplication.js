@@ -4,7 +4,7 @@ const usePostApplication = () => {
   const postApplication = async (data) => {
     try {
       const response = await fetch(
-        "http://localhost:3000/api/application/post-app",
+        "https://university-backend.vercel.app/api/application/post-app",
         {
           method: "POST",
           credentials: "include",
