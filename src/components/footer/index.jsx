@@ -12,13 +12,13 @@ function Footer() {
 
             <p className="text-[16px] mt-10 mb-5">We help students find the right university in Russia.</p>
             <div className="flex text-[20px]">
-              <a href="########" aria-label="Facebook" className='md:ml-[120px] mr-[10px]'>
+              <a href="https://www.facebook.com" aria-label="Facebook" className='md:ml-[120px] mr-[10px]'>
                 < FaSquareFacebook />
               </a>
-              <a href="########" aria-label="Facebook" className='mr-[10px]'>
+              <a href="https://web.whatsapp.com/" aria-label="Facebook" className='mr-[10px]'>
                 < FaSquareWhatsapp />
               </a>
-              <a href="########" aria-label="Facebook" className='mr-[10px]'>
+              <a href="https://www.instagram.com/" aria-label="Facebook" className='mr-[10px]'>
                 < FaSquareInstagram />
               </a>
             </div>

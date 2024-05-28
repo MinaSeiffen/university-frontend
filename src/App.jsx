@@ -1,20 +1,16 @@
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import { Toaster } from 'react-hot-toast'
+import { Toaster } from "react-hot-toast";
 
 import Home from "./Pages/Home/Home";
-import Universities from './Pages/Universties/Universities'
-import HowToApply from './Pages/HowToApply/HowToApply'
-import ContactUs from './Pages/ContactUs/ContactUs'
-import Header from './components/Navbar/index'
-import SignUp from "./Pages/SignUp/SignUp"
+import Universities from "./Pages/Universties/Universities";
+import HowToApply from "./Pages/HowToApply/HowToApply";
+import ContactUs from "./Pages/ContactUs/ContactUs";
+import Header from "./components/Navbar/index";
+import SignUp from "./Pages/SignUp/SignUp";
 
-import Navbar from "./components/Navbar/index"
+import Navbar from "./components/Navbar/index";
 import Footer from "./components/footer";
 import Apply from "./Pages/Apply/Apply";
 import Login from "./Pages/Login/Login";
@@ -22,6 +18,7 @@ import Login from "./Pages/Login/Login";
 import FindUniversity from "./Pages/Search/FindUniversity";
 
 import LearnMore from "./Pages/Learn More/LearnMore";
+import Profile from "./Pages/Profile/Profile";
 
 
 function App() {
@@ -30,10 +27,11 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
+          <Route path='/' element={<Home />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/apply" element={<Apply />} />
-          <Route path='/' element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path='/universities' element={< Universities />} />
           <Route path='/howToApply' element={<HowToApply />} />
           <Route path='/contact_us' element={<ContactUs />} />
