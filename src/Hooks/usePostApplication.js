@@ -4,7 +4,7 @@ const usePostApplication = () => {
   const postApplication = async (data) => {
     try {
       const response = await fetch(
-        "https://university-backend-o4hq.onrender.com/api/application/post-app",
+        "https://university-backend-qw4f.onrender.com/api/application/post-app",
         {
           method: "POST",
           credentials: "include",

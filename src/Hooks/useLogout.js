@@ -5,7 +5,7 @@ const useLogout = () => {
     const navigate = useNavigate()
   const logout = async () => {
     try {
-      const response = await fetch("https://university-backend-o4hq.onrender.com/api/auth/logout", {
+      const response = await fetch("https://university-backend-qw4f.onrender.com/api/auth/logout", {
         method: "POST",
         credentials: "include",
       });

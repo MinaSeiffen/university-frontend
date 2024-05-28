@@ -4,7 +4,7 @@ const useUpdateProfile = () => {
   const updateProfile = async (formData) => {
     try {
       const response = await fetch(
-        "https://university-backend-o4hq.onrender.com/api/user/update-profile",
+        "https://university-backend-qw4f.onrender.com/api/user/update-profile",
         {
           method: "PATCH",
           credentials: "include",

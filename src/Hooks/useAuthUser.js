@@ -5,7 +5,7 @@ const useAuthUser = () => {
 
   const getUser = async () => {
     try {
-      const response = await fetch("https://university-backend-o4hq.onrender.com/api/user/", {
+      const response = await fetch("https://university-backend-qw4f.onrender.com/api/user/", {
         method: "GET",
         credentials: "include",
       });
