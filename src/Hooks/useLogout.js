@@ -16,6 +16,7 @@ const useLogout = () => {
       }
       toast.success(resData.message);
       navigate("/");
+      window.location.reload();
       window.scrollTo({
         top: 0,
         behavior: 'smooth'

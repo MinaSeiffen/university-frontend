@@ -23,7 +23,9 @@ const UniversityCard = ({university}) => {
             </div>
             <div className='mt-4'>
               <button className="border border-[#240F6E] rounded-[11px] px-[46px] py-[8px] text-[#240F6E] bg-white font-['Merriweather'] text-[18px] hover:bg-slate-100"><Link to={`/learnMore/${university.id}`}>Learn more</Link></button>
+              <Link to={`/apply/${university.id}`}>
               <button className="border rounded-[11px] px-[46px] py-[8px] text-white bg-[#240F6E] font-['Merriweather'] text-[18px] mx-5 hover:bg-blue-900 mt-2">Apply</button>
+              </Link>
             </div>
           </div>
         </div>

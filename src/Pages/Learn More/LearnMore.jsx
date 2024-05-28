@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { universities } from '../../Constants/index';
+import Spinner from '../../components/Spinner/Spinner';
 
 
 const LearnMore = () => {
@@ -15,7 +16,7 @@ const LearnMore = () => {
     }, [id]);
 
     if (!university) {
-        return <div>Loading...</div>;
+        return <Spinner />
     }
 
     return (
@@ -320,12 +321,14 @@ const LearnMore = () => {
                 </div>
 
                 <div className="flex w-[240px] md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <Link to={`/apply/${university.id}`}>
                     <button
                         type="button"
                         className="text-white bg-[#240F6E] font-[Merriweather] font-[700] text-[26px] rounded-lg text-sm px-[46px] py-[12px] text-center ml-[1120px] mt-[15px] hover:bg-blue-900"
-                    >
+                        >
                         Apply
                     </button>
+                        </Link>
                 </div>
             </div>
 

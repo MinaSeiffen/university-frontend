@@ -21,7 +21,6 @@ import LearnMore from "./Pages/Learn More/LearnMore";
 import Profile from "./Pages/Profile/Profile";
 import useAuthUser from "./Hooks/useAuthUser";
 import { useEffect } from "react";
-import Spinner from "./components/Spinner/Spinner";
 
 
 function App() {
@@ -32,12 +31,12 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header authUser={authUser} />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/apply" element={<Apply />} />
+          <Route path="/apply/:id" element={<Apply />} />
           <Route path="/profile" element={<Profile authUser={authUser} />} />
           <Route path='/universities' element={< Universities />} />
           <Route path='/howToApply' element={<HowToApply />} />

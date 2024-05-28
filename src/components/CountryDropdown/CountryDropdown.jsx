@@ -44,7 +44,7 @@ const CountryDropdown = ({ selectedCountry, setSelectedCountry }) => {
           <img src={selectedCountry.flag} alt={selectedCountry.value} className="w-[24px] h-[17.33px] mr-2"/>
           <span className='w-[38px] h-[25px] leading-[25.14px] text-[20px] font-merriweather font-light'>{selectedCountry.phoneCode}</span>
         </div>
-        <img src="./images/Vector.svg" alt="vector" className='-mr-[5px]' />
+        <img src="/images/Vector.svg" alt="vector" className='-mr-[5px]' />
       </button>
       {isOpen && (
         <ul className="absolute mt-1 w-full z-50 bg-white border border-gray-300 rounded shadow-lg">

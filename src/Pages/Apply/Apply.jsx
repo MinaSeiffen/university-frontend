@@ -1,12 +1,23 @@
 import React, { useEffect, useState } from "react";
 import CountryDropdown from "../../components/CountryDropdown/CountryDropdown";
-import { budgetRanges, countries, periodOfTime } from "../../Constants";
+import { budgetRanges, countries, periodOfTime, universities } from "../../Constants";
 import NextBackBtns from "../../components/NextBackBtns/NextBackBtns";
 import axiosInstance from "../../Axios/axiosConfig";
 import usePostApplication from "../../Hooks/usePostApplication";
+import { useParams } from "react-router-dom";
+import Spinner from "../../components/Spinner/Spinner";
 
 const Apply = () => {
-  const {postApplication} = usePostApplication()
+  const { postApplication } = usePostApplication();
+  const { id } = useParams();
+
+  const [university, setUniversity] = useState(null);
+
+  useEffect(() => {
+    const filteredUniversity = universities.find((univ) => univ.id === id);
+    setUniversity(filteredUniversity);
+  }, [id]);
+
   const defaultCountry = {
     value: "eg",
     phoneCode: "+20",
@@ -23,18 +34,20 @@ const Apply = () => {
   const [educationFileType, setEducationFileType] = useState("");
 
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    nationality: '',
-    residence: '',
-    planStart: '',
-    rangeOfBudget: '',
-    passport: '',
-    education: '',
+    name: "",
+    phone: "",
+    nationality: "",
+    residence: "",
+    planStart: "",
+    rangeOfBudget: "",
+    passport: "",
+    education: "",
+    universityName: '',
+    imgSrc: '',
   });
 
   const handleChange = (e) => {
-      setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handlePassportChange = (e) => {
@@ -48,7 +61,7 @@ const Apply = () => {
     const file = e.target.files[0];
     setEducationFile(file);
     uploadFile(file, "education");
-    setEducationFileType(file.type)
+    setEducationFileType(file.type);
   };
 
   const uploadFile = async (file, type) => {
@@ -56,25 +69,28 @@ const Apply = () => {
     uploadFormData.append("file", file);
 
     try {
-      const response = await axiosInstance.post(`/upload/${type}`, uploadFormData);
+      const response = await axiosInstance.post(
+        `/upload/${type}`,
+        uploadFormData
+      );
       if (type === "passport") {
         setPassportUrl(response.data.url);
-        setFormData({...formData ,passport: response.data.url })
+        setFormData({ ...formData, passport: response.data.url });
       } else if (type === "education") {
         setEducationUrl(response.data.url);
-        setFormData({...formData ,education: response.data.url })
+        setFormData({ ...formData, education: response.data.url });
       }
     } catch (error) {
       console.error("Error uploading file:", error);
     }
   };
 
-  const [isStepValid1 , setIsStepValid1] = useState(false);
-  const [isStepValid2 , setIsStepValid2] = useState(false);
+  const [isStepValid1, setIsStepValid1] = useState(false);
+  const [isStepValid2, setIsStepValid2] = useState(false);
 
   const handleNext = (e) => {
     e.preventDefault();
-  
+
     if ((step === 1 && isStepValid1) || (step === 2 && isStepValid2)) {
       if (step < 2) {
         setStep(step + 1);
@@ -86,7 +102,12 @@ const Apply = () => {
   };
 
   useEffect(() => {
-    if (formData.name && formData.phone && formData.nationality && formData.residence) {
+    if (
+      formData.name &&
+      formData.phone &&
+      formData.nationality &&
+      formData.residence
+    ) {
       setIsStepValid1(true);
     } else {
       setIsStepValid1(false);
@@ -94,7 +115,12 @@ const Apply = () => {
   }, [formData.name, formData.phone, formData.nationality, formData.residence]);
 
   useEffect(() => {
-    if (formData.planStart && formData.rangeOfBudget && passportUrl && educationUrl) {
+    if (
+      formData.planStart &&
+      formData.rangeOfBudget &&
+      passportUrl &&
+      educationUrl
+    ) {
       setIsStepValid2(true);
     } else {
       setIsStepValid2(false);
@@ -109,32 +135,49 @@ const Apply = () => {
   };
 
   const handleSubmit = async () => {
-    const updatedFormData = { ...formData, phone: `${selectedCountry.phoneCode}${formData.phone}` };
+    const updatedFormData = {
+      ...formData,
+      phone: `${selectedCountry.phoneCode}${formData.phone}`,
+      universityName: university?.titleUniv,
+      imgSrc: university?.image,
+    };
     setFormData(updatedFormData);
     await postApplication(updatedFormData);
-};
+  };
 
-  
+  if (!university) {
+    return <Spinner />;
+  }
+
   return (
     <>
       <div className="w-fit lg:h-[521px] lg:mt-[104px]">
         <img
-          src="/images/uni-1.svg"
+          src={university?.image}
           alt="university"
           className="2xl:w-[1920px] 2xl:h-fit "
           width={1920}
         />
       </div>
-      <div className="lg:w-[883px] lg:h-[100px] lg:mt-[44px] lg:mx-auto text-center ">
+      <div className="w-[900px] lg:h-[100px] lg:mt-[44px] lg:mx-auto text-center ">
         <h1 className="w-fit mx-auto font-merriweather font-bold text-[40px] leading-[50.28px] text-center text-[#212121] ">
           Apply for a
         </h1>
-        <span className="font-merriweather font-bold text-[40px] leading-[50.28px] text-end text-[#240F6E] lg:ml-[10px]">
-          Kabardino balkaria state medical university
+        <span className="w-[900px] font-merriweather font-bold text-[40px] leading-[50.28px] text-end text-[#240F6E]">
+          {university?.titleUniv}
         </span>
       </div>
       <div className="lg:mt-[32px] lg:w-[882px] lg:h-[65px] lg:mx-auto lg:mb-[38px] ">
-        <img src={step === 1 ? '/images/default.svg' : step===2 ? "/images/step2.svg" : '/images/step3.svg'} alt="bar" />
+        <img
+          src={
+            step === 1
+              ? "/images/default.svg"
+              : step === 2
+              ? "/images/step2.svg"
+              : "/images/step3.svg"
+          }
+          alt="bar"
+        />
       </div>
       <div
         className={`lg:w-[996px] lg:p-[72px] bg-[#C8E1FC] rounded-[10px] mx-auto lg:mb-[100px] ${
@@ -155,7 +198,7 @@ const Apply = () => {
                   name="name"
                   placeholder="Ahmed Mohamed"
                   value={formData.name}
-                onChange={handleChange}
+                  onChange={handleChange}
                   className="block lg:w-[852px] lg:h-[56px] rounded-[10px] border border-[#646464] bg-transparent lg:p-[16px] leading-[25.14px] text-[20px] font-merriweather font-normal text-[#212121]"
                 />
               </label>
@@ -174,10 +217,10 @@ const Apply = () => {
                 <input
                   type="number"
                   name="phone"
-                maxLength={12}
-                placeholder="1xxxxxxxxx"
-                value={formData.phone}
-                onChange={handleChange}
+                  maxLength={12}
+                  placeholder="1xxxxxxxxx"
+                  value={formData.phone}
+                  onChange={handleChange}
                   className="block lg:w-[852px] lg:h-[56px] rounded-[10px] border border-[#212121] lg:p-[16px] leading-[25.14px] text-[20px] bg-transparent font-merriweather font-normal text-[#212121]"
                 />
               </label>
@@ -186,9 +229,9 @@ const Apply = () => {
                   What is your nationality?*
                 </p>
                 <select
-                name="nationality"
-                value={formData.nationality}
-                onChange={handleChange}
+                  name="nationality"
+                  value={formData.nationality}
+                  onChange={handleChange}
                   className="block lg:w-[852px] lg:h-[59px] rounded-[10px] border border-[#212121] lg:p-[16px] leading-[25.14px] text-[20px] bg-[#C8E1FC] font-merriweather font-normal text-[#212121] items-center justify-center"
                 >
                   <option value="" disabled>
@@ -259,7 +302,7 @@ const Apply = () => {
               </label>
               <label className="lg:w-[852px] lg:h-[110px] flex lg:flex-col lg:gap-[24px]">
                 <p className="font-merriweather font-normal text-[24px] leading-[30.17px] text-[#240F6E] lg:w-[589px] inline">
-                What is your maximum budget for tuition fees?*
+                  What is your maximum budget for tuition fees?*
                 </p>
                 <select
                   name="rangeOfBudget"
@@ -294,7 +337,9 @@ const Apply = () => {
                         width={50}
                         height={50}
                       />
-                      <p className="text-[#646464]">PDF Uploaded Successfully</p>
+                      <p className="text-[#646464]">
+                        PDF Uploaded Successfully
+                      </p>
                     </div>
                   )}
                   {passportUrl && passportFileType !== "application/pdf" && (
@@ -327,7 +372,7 @@ const Apply = () => {
                   Education Certificate*
                 </p>
                 <div className="lg:w-[852px] lg:h-[248px] rounded-[10px] border border-dotted border-[#646464] flex items-center justify-center">
-                {educationUrl && educationFileType === "application/pdf" && (
+                  {educationUrl && educationFileType === "application/pdf" && (
                     <div className="flex flex-col items-center justify-center">
                       <img
                         src="/images/pdf-icon.jpg"
@@ -335,7 +380,9 @@ const Apply = () => {
                         width={50}
                         height={50}
                       />
-                      <p className="text-[#646464]">PDF Uploaded Successfully</p>
+                      <p className="text-[#646464]">
+                        PDF Uploaded Successfully
+                      </p>
                     </div>
                   )}
                   {educationUrl && educationFileType !== "application/pdf" && (
