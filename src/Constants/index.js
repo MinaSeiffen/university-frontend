@@ -12,9 +12,9 @@ import learnImage5 from '../assets/image 3 (4).svg'
 import { TbH6 } from "react-icons/tb"
 
 export const countries = [
-    {label: 'Egypt' , value: "Egypt"},
+    {label: 'Russia' , value: "Russia"},
     {label: 'India' , value: "India"},
-    {label: 'South Africa' , value: "South Africa"}
+    {label: 'Pakistan' , value: "Pakistan"}
 ]
 
 export const periodOfTime = [
