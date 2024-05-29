@@ -147,7 +147,7 @@ const Apply = () => {
       imgSrc: university?.image,
     };
     setFormData(updatedFormData);
-    console.log(updatedFormData);
+    await postApplication(updatedFormData);
   };
 
   if (!university) {
