@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 export default function AppLayout() {
   return (
     <>
-      <Navbar />
+      <Navbar authUser={authUser} />
       <Outlet />
       <Footer />
     </>
