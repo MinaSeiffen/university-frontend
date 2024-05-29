@@ -8,7 +8,7 @@ export default function AppLayout() {
   const { getUser, authUser } = useAuthUser();
   useEffect(() => {
     getUser();
-  }, []);
+  }, [getUser]);
   return (
     <>
       <Navbar authUser={authUser} />
