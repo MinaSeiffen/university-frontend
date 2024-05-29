@@ -15,9 +15,9 @@ export default function Navbar({authUser}) {
     <nav className="absolute w-full bg-border-gray-200 dark:bg-[#212121] z-10 top-0">
       <div className="max-w-screen-x1 h-[104px] flex flex-wrap justify-between items-center mx-auto md:max-w-6xl">
         {isRootPath ? (
-          <img src="public/images/Logo.ico" className="h-[60px]" alt="Logo.ico" />
+          <img src="/images/Logo.ico" className="h-[60px]" alt="Logo.ico" />
         ) : (
-          <img src="public/images/Logo.svg" className="h-[60px]" alt="Logo.svg" />
+          <img src="/images/Logo.svg" className="h-[60px]" alt="Logo.svg" />
         )}
 
         <button
