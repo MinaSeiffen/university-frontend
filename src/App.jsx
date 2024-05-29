@@ -16,8 +16,14 @@ import FindUniversity from "./Pages/Search/FindUniversity";
 
 import LearnMore from "./Pages/Learn More/LearnMore";
 import Profile from "./Pages/Profile/Profile";
+import useAuthUser from "./Hooks/useAuthUser";
+import { useEffect } from "react";
 
 function App() {
+  const { getUser, authUser } = useAuthUser();
+  useEffect(() => {
+    getUser();
+  }, []);
   const routes = createBrowserRouter([
     {
       path: "/",
