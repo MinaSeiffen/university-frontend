@@ -17,7 +17,7 @@ const HowToApply = () => {
         <div className='-ml-[205px] -mt-[70px]'>
           <img
             className="w-[356px] -h-[376px] absolute"
-            src="src/assets/Group 3.svg"
+            src="/images/Group 3.svg"
             alt="Group 3"
           />
         </div>
@@ -59,7 +59,7 @@ const HowToApply = () => {
             <h4 className='text-[24px] mt-[70px]'>Start your application today</h4>
             <img
               className='w-[413px] h-[275px] mt-[60px] m-auto'
-              src='src/assets/image 2.svg'
+              src='/images/image 2.svg'
               alt='image 2'
             />
             <button className="w-[221px] h-[56px] rounded-lg px-[46px] py-[12px] text-white bg-[#240F6E] text-[20px] hover:bg-blue-900 mt-[60px] ">

@@ -1,14 +1,14 @@
-import univImage1 from "../assets/Kabardino.jfif"
-import univImage2 from '../assets/Ufa.jfif'
-import univImage3 from '../assets/Ulyanovsk.jfif'
-import univImage4 from '../assets/Saratov.jfif'
-import univImage5 from '../assets/Astraxan.jfif'
+import univImage1 from "/images/Kabardino.jfif"
+import univImage2 from '/images/Ufa.jfif'
+import univImage3 from '/images/Ulyanovsk.jfif'
+import univImage4 from '/images/Saratov.jfif'
+import univImage5 from '/images/Astraxan.jfif'
 
-import learnImage1 from '../assets/image 3.svg'
-import learnImage2 from '../assets/image 3 (1).svg'
-import learnImage3 from '../assets/image 3 (2).svg'
-import learnImage4 from '../assets/image 3 (3).svg'
-import learnImage5 from '../assets/image 3 (4).svg'
+import learnImage1 from '/images/image 3.svg'
+import learnImage2 from '/images/image 3 (1).svg'
+import learnImage3 from '/images/image 3 (2).svg'
+import learnImage4 from '/images/image 3 (3).svg'
+import learnImage5 from '/images/image 3 (4).svg'
 import { TbH6 } from "react-icons/tb"
 
 export const countries = [

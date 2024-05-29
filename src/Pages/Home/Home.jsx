@@ -1,11 +1,11 @@
 import React from "react";
 
-import localImage1 from '../../assets/Russia.jfif'
-import localImage2 from '../../assets/Programs.jfif'
-import localImage3 from '../../assets/RichCultural.jfif'
-import localImage4 from '../../assets/Learn.jfif'
-import localImage5 from '../../assets/man.png'
-import localImage6 from '../../assets/woman.png'
+import localImage1 from '/images/Russia.jfif'
+import localImage2 from '/images/Programs.jfif'
+import localImage3 from '/images/RichCultural.jfif'
+import localImage4 from '/images/Learn.jfif'
+import localImage5 from '/images/man.png'
+import localImage6 from '/images/woman.png'
 import HomeProps from "../../components/HomeProps/HomeProps";
 import HomeProps2 from "../../components/HomeProps/HomeProps2";
 import { Link } from "react-router-dom";
@@ -49,7 +49,7 @@ export default function Home() {
       <div className="relative bg-cover bg-black w-[1440px] h-[1024px]">
         <img
           className="absolute opacity-65 w-[1440px] h-[1024px] "
-          src="src/assets/Home.jfif"
+          src="public/images/Home.jfif"
           alt="Studying in Russia"
         />
         <div className="absolute ml-[48px] mt-[352px]">
