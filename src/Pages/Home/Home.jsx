@@ -1,9 +1,9 @@
 import React from "react";
 
 import localImage1 from '/images/Russia.svg'
-import localImage2 from '/images/Programs.svg'
-import localImage3 from '/images/RichCultural.svg'
-import localImage4 from '/images/Learn.svg'
+import localImage2 from 'https://res.cloudinary.com/drxe0fu2m/image/upload/v1717003872/vo8v1l2p6qy2a3wrwdt3.jpg'
+import localImage3 from 'https://res.cloudinary.com/drxe0fu2m/image/upload/v1717003940/kjuhpezbvk3uq2drsmiv.jpg'
+import localImage4 from 'https://res.cloudinary.com/drxe0fu2m/image/upload/v1717004014/eggj1e0bhpcuh8yajabm.jpg'
 import localImage5 from '/images/man.png'
 import localImage6 from '/images/woman.png'
 import HomeProps from "../../components/HomeProps/HomeProps";
@@ -49,7 +49,7 @@ export default function Home() {
       <div className="relative bg-cover bg-black w-[1440px] h-[1024px]">
         <img
           className="absolute opacity-65 w-[1440px] h-[1024px] "
-          src="/images/home.svg"
+          src="https://res.cloudinary.com/drxe0fu2m/image/upload/v1717003776/zbh6xcluzsoc40c8mznd.jpg"
           alt="Studying in Russia"
         />
         <div className="absolute ml-[48px] mt-[352px]">
