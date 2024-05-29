@@ -63,7 +63,8 @@ const HowToApply = () => {
               alt='image 2'
             />
             <button className="w-[221px] h-[56px] rounded-lg px-[46px] py-[12px] text-white bg-[#240F6E] text-[20px] hover:bg-blue-900 mt-[60px] ">
-              Apply Now
+              <Link to="/universities">Apply Now</Link>
+
             </button>
           </div>
         </div>
