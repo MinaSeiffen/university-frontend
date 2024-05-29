@@ -1,9 +1,9 @@
 import React from "react";
 
-import localImage1 from '/images/Russia.jfif'
-import localImage2 from '/images/Programs.jfif'
-import localImage3 from '/images/RichCultural.jfif'
-import localImage4 from '/images/Learn.jfif'
+import localImage1 from '/images/Russia.svg'
+import localImage2 from '/images/Programs.svg'
+import localImage3 from '/images/RichCultural.svg'
+import localImage4 from '/images/Learn.svg'
 import localImage5 from '/images/man.png'
 import localImage6 from '/images/woman.png'
 import HomeProps from "../../components/HomeProps/HomeProps";

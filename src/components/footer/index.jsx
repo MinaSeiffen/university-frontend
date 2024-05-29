@@ -12,7 +12,7 @@ function Footer() {
       <div className="mx-auto w-full max-w-screen-xl py-8 pt-20 pe-5">
         <div className="flex justify-between">
           <div className="mb-6 md:mb-0 w-90">
-            <img src="public/images/Frame 1.svg" className="h-[120px] me-3 -mt-[40px]" alt="FlowBite Logo" />
+            <img src="/images/Frame 1.svg" className="h-[120px] me-3 -mt-[40px]" alt="FlowBite Logo" />
 
             <p className="text-[16px] mt-10 mb-5">We help students find the right university in Russia.</p>
             <div className="flex text-[20px]">
