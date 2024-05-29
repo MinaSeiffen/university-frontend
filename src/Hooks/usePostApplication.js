@@ -14,7 +14,7 @@ const usePostApplication = () => {
       );
       const resData = await response.json();
       if (!response.ok) {
-        toast.error(resData.error);
+        return toast.error(resData.error);
       }
       toast.success(resData.message);
     } catch (error) {
