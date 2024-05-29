@@ -72,11 +72,11 @@ function Footer() {
         </div>
         <div className='flex mt-20'>
 
-          <img className="ml-60 -mt-[24px]" src="public/images/bicycle (1) 1.svg" alt="la_university" />
+          <img className="ml-60 -mt-[24px]" src="/images/bicycle (1) 1.svg" alt="la_university" />
 
-          <img className="ml-[650px]" src="public/images/la_university.svg" alt="la_university" />
+          <img className="ml-[650px]" src="/images/la_university.svg" alt="la_university" />
 
-          <img className="ml-[50px]" src="public/images/icon-park-outline_tree-two.svg " alt="la_university" />
+          <img className="ml-[50px]" src="/images/icon-park-outline_tree-two.svg " alt="la_university" />
 
         </div>
         <hr className="-ml-[80px] -mt-[12px] w-[1440px]" />

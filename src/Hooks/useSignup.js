@@ -27,6 +27,7 @@ const useSignup = () => {
       }
       toast.success(resData.message);
       navigate('/')
+      window.location.reload()
     } catch (error) {
       throw new Error(error);
     }
