@@ -5,7 +5,7 @@ const HomeProps = ({ image, titel, description, image2, titel2, description2 }) 
         <>
             {/* image 1   and image  */}
 
-            <div className="flex py-5 mx-auto justify-center font-[Merriweather]">
+            <div className="flex py-5 2xl:mx-auto 2xl:justify-center font-[Merriweather]">
                 <div className=" items-center text-left ml-[134px]">
                     <h2 className="text-[32px] sm:m-[auto]">
                         {titel}
@@ -25,7 +25,7 @@ const HomeProps = ({ image, titel, description, image2, titel2, description2 }) 
 
             {/* image 2   and image 4 */}
 
-            <div className="flex py-5 font-[Merriweather] mx-auto justify-center">
+            <div className="flex py-5 font-[Merriweather] mx-auto 2xl:justify-center">
                 <div className="ml-[134px]">
                     <img
                         className="sm:w-[500px] md:w-[568px] h-[377.88px] rounded-lg sm:m-auto "

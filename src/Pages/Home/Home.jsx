@@ -66,15 +66,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="font-[Merriweather] items-center">
-        <h2 className="text-[#240F6E] text-[32px] ml-[120px] sm:mt-20  md:mt-20  lg:mt-20">
+      <div className="font-[Merriweather] items-center ">
+        <h2 className="text-[#240F6E] text-[32px]  sm:mt-20  md:mt-20 max-2xl:ml-[120px] 2xl:ml-[22%] lg:mt-20">
           Study in Russia: A Premier Educational Destination
         </h2>
         <div className="mt-4">
-          <h3 className="text-[32px] ml-[120px]">
+          <h3 className="text-[32px] max-2xl:ml-[120px] 2xl:ml-[22%]">
             Discover Educational Opportunities in Russia
           </h3>
-          <p className="text-[24px] ml-[120px] mt-2">
+          <p className="text-[24px] max-2xl:ml-[120px] 2xl:ml-[22%] mt-2">
             Russia is one of the most attractive study destinations for
             international students, thanks to its <br /> world-ranked
             universities and diverse academic programs. Russian universities
@@ -87,7 +87,7 @@ export default function Home() {
       </div>
 
       <div className='mt-[50px]'>
-        <h2 className="text-[#240F6E] text-[32px] ml-[120px]">
+        <h2 className="text-[#240F6E] text-[32px] max-2xl:ml-[120px] 2xl:ml-[22%]">
           Benefits of Studying in Russia:
         </h2>
       </div>
@@ -104,7 +104,7 @@ export default function Home() {
         />
       ))}
 
-      <h2 className="text-[#5B4B92] text-[32px] ml-[120px] md:mt-10 lg:mt-10 ">
+      <h2 className="text-[#5B4B92] text-[32px] md:mt-10 lg:mt-10 max-2xl:ml-[120px] 2xl:ml-[22%]">
         Some Student Success Stories
       </h2>
 
