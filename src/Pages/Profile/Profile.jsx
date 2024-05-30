@@ -83,7 +83,7 @@ const Profile = ({ authUser }) => {
 
   return (
     <>
-      <div className="lg:w-[312px] lg:h-[312px] lg:mt-[168px] lg:ml-[120px] ">
+      <div className="lg:w-[312px] lg:h-[312px] lg:mt-[168px] lg:ml-[7%] ">
         <img
           src="/images/profile-icon.svg"
           alt="profile"

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HowToApply = () => {
   return (
     <>
-      <section className='flex font-[Merriweather] mt-[192px] mx-auto justify-center'>
+      <section className='flex font-[Merriweather] mt-[192px] max-2xl:mx-[13%] 2xl:mx-[18%]'>
         <div className='w-[1020px] h-[304px] bg-[#C8E1FC] pt-[40px] pl-[50px] rounded-lg '>
           <h3 className='text-[32px] mb-5'>How to apply?</h3>
           <p className='text-[24px] w-[646px] h-[120px] text-[#212121] mx-auto justify-center'>Applying to study abroad is very exciting, but it can
