@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HowToApply = () => {
   return (
     <>
-      <section className='flex font-[Merriweather] mt-[192px] '>
+      <section className='flex font-[Merriweather] mt-[192px] mx-auto justify-center'>
         <div className='w-[1020px] h-[304px] bg-[#C8E1FC] ml-[120px] pt-[40px] pl-[50px] rounded-lg'>
           <h3 className='text-[32px] mb-5'>How to apply?</h3>
           <p className='text-[24px] w-[646px] h-[120px] text-[#212121]'>Applying to study abroad is very exciting, but it can
@@ -25,12 +25,12 @@ const HowToApply = () => {
 
       {/* section 2 */}
 
-      <section className='w-full h-[839px] bg-[#C8E1FC] mt-[100px] font-[Merriweather]'>
-        <div className='pl-[120px] pt-[65px]'>
+      <section className='w-full h-[839px] bg-[#C8E1FC] mt-[100px] font-[Merriweather] mx-auto justify-center items-center'>
+        <div className='pl-[120px] pt-[65px] mx-auto justify-center'>
           <h3 className='text-[40px]'>Our simple application process </h3>
         </div>
 
-        <div className='flex mt-[100px]'>
+        <div className='flex mt-[100px] mx-auto justify-center'>
           <div className='w-[66px] h-[374px] pl-[120px] mt-[35px] mr-[106px]'>
             <div className='w-[66px] h-[66px] rounded-full bg-[#240F6E] text-[40px] text-[#FFFFFF] text-center mb-[80px]'>1</div>
             <div className='w-[66px] h-[66px] rounded-full bg-[#240F6E] text-[40px] text-[#FFFFFF] text-center mb-[80px]'>2</div>
@@ -38,7 +38,7 @@ const HowToApply = () => {
           </div>
 
           <div>
-            <div className='w-[300px] h-[128px] mb-10'>
+            <div className='w-[300px] h-[128px] mb-10 '>
               <h4 className='text-[24px]'>Choose your university</h4>
               <p className='text-[20px] text-[#000000]'>Our friendly advisors can <br /> help you explore your options.</p>
               <Link to='/search' className='flex text-[#240F6E] text-[20px]' > Find a university < FaGreaterThan className='ml-4 mt-[5px]' /></Link>
