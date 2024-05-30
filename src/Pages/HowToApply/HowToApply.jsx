@@ -6,15 +6,15 @@ const HowToApply = () => {
   return (
     <>
       <section className='flex font-[Merriweather] mt-[192px] mx-auto justify-center'>
-        <div className='w-[1020px] h-[304px] bg-[#C8E1FC] ml-[120px] pt-[40px] pl-[50px] rounded-lg'>
+        <div className='w-[1020px] h-[304px] bg-[#C8E1FC] pt-[40px] pl-[50px] rounded-lg '>
           <h3 className='text-[32px] mb-5'>How to apply?</h3>
-          <p className='text-[24px] w-[646px] h-[120px] text-[#212121]'>Applying to study abroad is very exciting, but it can
+          <p className='text-[24px] w-[646px] h-[120px] text-[#212121] mx-auto justify-center'>Applying to study abroad is very exciting, but it can
             be a bit intimidating too. That’s why we’ll support you
             at every step of the way, and make the application
             process as simple as possible.
           </p>
         </div>
-        <div className='-ml-[205px] -mt-[70px]'>
+        <div className='-ml-[205px] -mt-[70px] justify-center'>
           <img
             className="w-[356px] -h-[376px] absolute"
             src="/images/Group 3.svg"
