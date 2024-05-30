@@ -49,7 +49,7 @@ export default function Home() {
       <div className="relative bg-cover bg-black w-full h-[1024px]">
         <img
           className="absolute opacity-65 w-full h-[1024px] "
-          src="/images/home.svg"
+          src="/images/home.png"
           alt="Studying in Russia"
         />
         <div className="absolute ml-[48px] mt-[352px]">
