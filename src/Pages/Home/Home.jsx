@@ -46,9 +46,9 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative bg-cover bg-black w-[1440px] h-[1024px]">
+      <div className="relative bg-cover bg-black w-full h-[1024px]">
         <img
-          className="absolute opacity-65 w-[1440px] h-[1024px] "
+          className="absolute opacity-65 w-full h-[1024px] "
           src="/images/home.svg"
           alt="Studying in Russia"
         />
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="font-[Merriweather]">
+      <div className="font-[Merriweather] items-center">
         <h2 className="text-[#240F6E] text-[32px] ml-[120px] sm:mt-20  md:mt-20  lg:mt-20">
           Study in Russia: A Premier Educational Destination
         </h2>

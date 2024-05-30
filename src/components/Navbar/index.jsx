@@ -13,7 +13,7 @@ export default function Navbar({authUser}) {
 
   return (
     <nav className="absolute w-full bg-border-gray-200 dark:bg-[#212121] z-10 top-0">
-      <div className="max-w-screen-x1 h-[104px] flex flex-wrap justify-between items-center mx-auto md:max-w-6xl">
+      <div className="w-full h-[104px] flex flex-wrap justify-between items-center mx-auto md:max-w-6xl">
         {isRootPath ? (
           <img src="/images/Logo.ico" className="h-[60px]" alt="Logo.ico" />
         ) : (
