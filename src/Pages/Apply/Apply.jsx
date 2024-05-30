@@ -164,7 +164,7 @@ const Apply = () => {
           width={1920}
         />
       </div>
-      <div className="w-[900px] lg:h-[100px] lg:mt-[44px] lg:mx-auto text-center ">
+      <div className="w-[900px] lg:h-[100px] lg:mt-[44px] 2xl:mt-[11%] lg:mx-auto text-center ">
         <h1 className="w-fit mx-auto font-merriweather font-bold text-[40px] leading-[50.28px] text-center text-[#212121] ">
           Apply for a
         </h1>
