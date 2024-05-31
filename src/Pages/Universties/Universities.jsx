@@ -7,7 +7,7 @@ const Universities = () => {
   return (
     <div className='mt-40'>
     {universities.map((university) => (
-      <UniversityCard university={university} />
+      <UniversityCard key={university.id} university={university} />
     ))}
     </div>
   )
