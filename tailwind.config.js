@@ -10,6 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        '3xl': '1700px', 
+        '4xl': '1920px',
+      },
       fontFamily: {
         'merriweather': ['Merriweather', 'serif'],
       }

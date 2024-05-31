@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomeProps2 = ({ image3, name, description3 }) => {
   return (
-    <div className="flex flex-row w-[1200px] mt-[62px] font-[Merriweather] gap-[24px] h-[105px] mx-auto">
+    <div className="flex flex-row w-[1200px] mt-[62px] font-[Merriweather] gap-[24px] h-[105px] xl:ml-[7.8%] 2xl:mx-[11.3%] 3xl:mx-[16.3%] 4xl:mx-[20.3%]">
       <img
         className="w-16 h-16 rounded-full shadow-lg mr-4 sm:mr-0"
         src={image3}
