@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="font-[Merriweather] lg:mt-[100px] xl:mx-[7.8%] 2xl:mx-[11.3%] 3xl:mx-[16.3%] 4xl:mx-[20.3%] ">  {/* Add padding for content */}
+      <div className="font-[Merriweather] lg:mt-[100px] xl:mx-[7.8%] 2xl:mx-[11.3%] 3xl:mx-[16.3%] 4xl:mx-[19%] ">  {/* Add padding for content */}
         <h2 className="text-[#240F6E] text-[32px] leading-[40.22px] w-[806px] h-[40px] font-merriweather ">  {/* Adjust spacing for different screen sizes */}
           Study in Russia: A Premier Educational Destination
         </h2>
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-[8px] mt-[56px] w-[482px] h-[56px] xl:ml-[7.8%] 2xl:mx-[11.3%] 3xl:mx-[16.3%] 4xl:mx-[20.3%] "> {/* Add padding for content */}
+      <div className="py-[8px] mt-[56px] w-[482px] h-[56px] xl:ml-[7.8%] 2xl:mx-[11.3%] 3xl:mx-[16.3%] 4xl:mx-[19%] "> {/* Add padding for content */}
         <h2 className="text-[#240F6E] text-[32px]">
           Benefits of Studying in Russia:
         </h2>
@@ -105,7 +105,7 @@ export default function Home() {
         />
       ))}
 
-      <h2 className="w-[467px] h-[40px] font-merriweather font-normal text-[32px] leading-[40.22px] text-[#240F6E] xl:ml-[7.8%] 2xl:mx-[11.3%] 3xl:mx-[16.3%] 4xl:mx-[20.3%] -mt-[30px]">  {/* Adjust spacing for different screen sizes */}
+      <h2 className="w-[467px] h-[40px] font-merriweather font-normal text-[32px] leading-[40.22px] text-[#240F6E] xl:ml-[7.8%] 2xl:mx-[11.3%] 3xl:mx-[16.3%] 4xl:mx-[19%] -mt-[30px]">  {/* Adjust spacing for different screen sizes */}
         Some Student Success Stories
       </h2>
 
