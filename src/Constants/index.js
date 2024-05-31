@@ -246,8 +246,8 @@ export const universities = [
 ]
 
 export const contactTitles = [
-    {title : 'for students and parents' , phoneNum: '+79889350642'},
-    {title : 'parternship and advertising' , phoneNum: '+79177441125'}
+    {title : 'for students and parents' , phoneNum: '+79889350642' , email: 'studyabroad1@gmail.com'},
+    {title : 'parternship and advertising', phoneNum: '+79177441125' , email: 'studyabroad2@gmail1.com'}
 ]
 
 export const contactTypes = [

@@ -56,7 +56,7 @@ const ContactUs = () => {
       </div>
       <div className="lg:w-[1200px] lg:h-[227px] lg:mt-[56px] mx-auto flex lg:flex-row lg:gap-[178px] ">
         {contactTitles.map((contact) => (
-          <ContactCard key={contact.title} title={contact.title} phoneNum={contact.phoneNum} />
+          <ContactCard key={contact.title} title={contact.title} phoneNum={contact.phoneNum} email={contact.email} />
         ))}
       </div>
       <div className="lg:w-[996px] lg:h-[728px] lg:mt-[56px] mx-auto rounded-[10px] bg-[#C8E1FC] p-[72px] ">
