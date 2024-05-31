@@ -44,37 +44,38 @@ export default function Home() {
     }
   ]
 
+
   return (
     <>
-      <div className="relative bg-cover bg-black w-full h-[1024px]">
+      <div className="relative bg-cover bg-black h-screen">  {/* Set full screen height */}
         <img
-          className="absolute opacity-65 w-full h-[1024px] "
+          className="absolute opacity-65 w-full h-full object-cover" 
           src="/images/home.png"
           alt="Studying in Russia"
         />
-        <div className="absolute ml-[48px] mt-[352px]">
-          <div className="font-[Merriweather] text-white justify-space-between">
-            <p className="text-[56px] w-[622px] h-[210px] mb-[56px] leading-[70.39px]">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"> {/* Center content vertically and horizontally */}
+          <div className="font-[Merriweather] text-white justify-space-between text-center">
+            <p className="text-5xl sm:text-4xl lg:text-5xl w-full mb-10 leading-tight">
               Discover your perfect
               route to studying at a
               top university abroad.
             </p>
-            <button className="text-white text-[24px] w-[273px] h-[54px] bg-[#240F6E] rounded-lg px-[46px] hover:bg-blue-900">
+            <button className="text-white text-xl px-8 py-2 bg-[#240F6E] rounded-lg hover:bg-blue-900">
               <Link to="/universities">All Universities</Link>
             </button>
           </div>
         </div>
       </div>
 
-      <div className="font-[Merriweather] items-center ">
-        <h2 className="text-[#240F6E] text-[32px]  sm:mt-20  md:mt-20 max-2xl:ml-[120px] 2xl:ml-[22%] lg:mt-20">
+      <div className="font-[Merriweather] px-4 py-8">  {/* Add padding for content */}
+        <h2 className="text-[#240F6E] text-3xl sm:mt-10 md:mt-20 lg:mt-32">  {/* Adjust spacing for different screen sizes */}
           Study in Russia: A Premier Educational Destination
         </h2>
         <div className="mt-4">
-          <h3 className="text-[32px] max-2xl:ml-[120px] 2xl:ml-[22%]">
+          <h3 className="text-3xl">
             Discover Educational Opportunities in Russia
           </h3>
-          <p className="text-[24px] max-2xl:ml-[120px] 2xl:ml-[22%] mt-2">
+          <p className="text-xl mt-2">
             Russia is one of the most attractive study destinations for
             international students, thanks to its <br /> world-ranked
             universities and diverse academic programs. Russian universities
@@ -86,8 +87,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='mt-[50px]'>
-        <h2 className="text-[#240F6E] text-[32px] max-2xl:ml-[120px] 2xl:ml-[22%]">
+      <div className="px-4 py-8"> {/* Add padding for content */}
+        <h2 className="text-[#240F6E] text-3xl">
           Benefits of Studying in Russia:
         </h2>
       </div>
@@ -104,7 +105,7 @@ export default function Home() {
         />
       ))}
 
-      <h2 className="text-[#5B4B92] text-[32px] md:mt-10 lg:mt-10 max-2xl:ml-[120px] 2xl:ml-[22%]">
+      <h2 className="text-[#5B4B92] text-3xl md:mt-10 lg:mt-20 px-4 py-8">  {/* Adjust spacing for different screen sizes */}
         Some Student Success Stories
       </h2>
 
