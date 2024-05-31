@@ -67,15 +67,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="font-[Merriweather] px-4 py-8">  {/* Add padding for content */}
-        <h2 className="text-[#240F6E] text-3xl sm:mt-10 md:mt-20 lg:mt-32">  {/* Adjust spacing for different screen sizes */}
+      <div className="font-[Merriweather] lg:mt-[100px] xl:ml-[7.8%] 2xl:ml-[18.5%]">  {/* Add padding for content */}
+        <h2 className="text-[#240F6E] text-[32px] leading-[40.22px] w-[806px] h-[40px] font-merriweather ">  {/* Adjust spacing for different screen sizes */}
           Study in Russia: A Premier Educational Destination
         </h2>
-        <div className="mt-4">
-          <h3 className="text-3xl">
+        <div className="mt-[32px] w-[1200px] h-[248px] flex flex-col gap-[16px] ">
+          <h3 className="text-[32px] leading-[40.22px] text-[#212121] font-merriweather font-normal ">
             Discover Educational Opportunities in Russia
           </h3>
-          <p className="text-xl mt-2">
+          <p className="text-[24px] leading-[48px] font-normal font-merriweather w-full h-[192px] ">
             Russia is one of the most attractive study destinations for
             international students, thanks to its <br /> world-ranked
             universities and diverse academic programs. Russian universities
@@ -87,8 +87,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-4 py-8"> {/* Add padding for content */}
-        <h2 className="text-[#240F6E] text-3xl">
+      <div className="py-[8px] mt-[56px] w-[482px] h-[56px] xl:ml-[7.8%] 2xl:ml-[18.5%] "> {/* Add padding for content */}
+        <h2 className="text-[#240F6E] text-[32px]">
           Benefits of Studying in Russia:
         </h2>
       </div>
@@ -105,7 +105,7 @@ export default function Home() {
         />
       ))}
 
-      <h2 className="text-[#5B4B92] text-3xl md:mt-10 lg:mt-20 px-4 py-8">  {/* Adjust spacing for different screen sizes */}
+      <h2 className="w-[467px] h-[40px] font-merriweather font-normal text-[32px] leading-[40.22px] text-[#240F6E] xl:ml-[7.8%] 2xl:ml-[18.5%] -mt-[30px]">  {/* Adjust spacing for different screen sizes */}
         Some Student Success Stories
       </h2>
 
