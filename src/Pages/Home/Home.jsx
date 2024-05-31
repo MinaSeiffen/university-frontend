@@ -53,9 +53,9 @@ export default function Home() {
           src="/images/home.png"
           alt="Studying in Russia"
         />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"> {/* Center content vertically and horizontally */}
-          <div className="font-[Merriweather] text-white justify-space-between text-center">
-            <p className="text-5xl sm:text-4xl lg:text-5xl w-full mb-10 leading-tight">
+        <div className="absolute top-1/2 left-1/4 w-[44%] transform -translate-x-1/2 -translate-y-1/2"> {/* Center content vertically and horizontally */}
+          <div className="font-[Merriweather] text-white justify-space-between text-start">
+            <p className="text-6xl sm:text-4xl lg:text-5xl w-full mb-10 leading-tight">
               Discover your perfect
               route to studying at a
               top university abroad.
