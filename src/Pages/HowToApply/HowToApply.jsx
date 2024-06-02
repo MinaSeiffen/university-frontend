@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const HowToApply = () => {
   return (
     <>
-      <section className='flex font-[Merriweather] mt-[192px] max-2xl:mx-[13%] 2xl:mx-[18%]'>
+      <section className='flex font-[Merriweather] mt-[192px] xl:ml-[7.8%] 2xl:mx-[11.3%] 3xl:mx-[15.3%] 4xl:mx-[19%]'>
         <div className='w-[1020px] h-[304px] bg-[#C8E1FC] pt-[40px] pl-[50px] rounded-lg '>
           <h3 className='text-[32px] mb-5'>How to apply?</h3>
-          <p className='text-[24px] w-[646px] h-[120px] text-[#212121] mx-auto justify-center'>Applying to study abroad is very exciting, but it can
+          <p className='text-[24px] w-[646px] h-[120px] text-[#212121] justify-center'>Applying to study abroad is very exciting, but it can
             be a bit intimidating too. That’s why we’ll support you
             at every step of the way, and make the application
             process as simple as possible.
@@ -26,12 +26,12 @@ const HowToApply = () => {
       {/* section 2 */}
 
       <section className='w-full h-[839px] bg-[#C8E1FC] mt-[100px] font-[Merriweather] mx-auto justify-center items-center'>
-        <div className='pl-[120px] pt-[65px] mx-auto justify-center'>
+        <div className='xl:ml-[8%] 2xl:mx-[11.3%] 3xl:mx-[15.3%] 4xl:mx-[19%] pt-[65px] justify-center'>
           <h3 className='text-[40px]'>Our simple application process </h3>
         </div>
 
-        <div className='flex mt-[100px] mx-auto justify-center'>
-          <div className='w-[66px] h-[374px] pl-[120px] mt-[35px] mr-[106px]'>
+        <div className='flex mt-[100px]  justify-center'>
+          <div className='w-[66px] h-[374px]  mt-[35px] mr-[106px]'>
             <div className='w-[66px] h-[66px] rounded-full bg-[#240F6E] text-[40px] text-[#FFFFFF] text-center mb-[80px]'>1</div>
             <div className='w-[66px] h-[66px] rounded-full bg-[#240F6E] text-[40px] text-[#FFFFFF] text-center mb-[80px]'>2</div>
             <div className='w-[66px] h-[66px] rounded-full bg-[#240F6E] text-[40px] text-[#FFFFFF] text-center'>3</div>

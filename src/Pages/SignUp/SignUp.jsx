@@ -122,7 +122,7 @@ const SignUp = () => {
 
         {errors.password && <p className="-mt-[20px] text-[13px] text-red-500">{errors.password.message}</p>}
         <div className="lg:w-[366px] lg:h-[150px]">
-          <p className="font-merriweather font-light text-[20px] leading-[25.14px] text-[#138701]">
+          <p className="font-merriweather font-light text-[20px] leading-[25.14px] text-[#646464]">
             {`10-32 characters`} 
             <br />
             {`At least one upper case`} 
